@@ -1,0 +1,23 @@
+Quartus Prime Archive log --	C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo/monociclo.qarlog
+
+Archive:	C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo/monociclo.qar
+Date:		Wed Oct 18 20:58:57 2023
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo/icache/bubblesort_inst_5cv1.hex
+C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo/icache/icache.v
+C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo/monociclo.qpf
+C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo/monociclo.qsf
+C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo/monociclo.v
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 6 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Wed Oct 18 21:00:01 2023
+Source archive file:	C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo/monociclo.qar
+Archive was extracted into	C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/
+		 - successfully.

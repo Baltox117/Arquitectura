@@ -1,0 +1,335 @@
+|monociclo_fpga
+clk_i => clk_i.IN1
+rst_ni => rst_ni.IN1
+disp0[0] << disp7segs:disp_0.salida_o
+disp0[1] << disp7segs:disp_0.salida_o
+disp0[2] << disp7segs:disp_0.salida_o
+disp0[3] << disp7segs:disp_0.salida_o
+disp0[4] << disp7segs:disp_0.salida_o
+disp0[5] << disp7segs:disp_0.salida_o
+disp0[6] << disp7segs:disp_0.salida_o
+disp1[0] << disp7segs:disp_1.salida_o
+disp1[1] << disp7segs:disp_1.salida_o
+disp1[2] << disp7segs:disp_1.salida_o
+disp1[3] << disp7segs:disp_1.salida_o
+disp1[4] << disp7segs:disp_1.salida_o
+disp1[5] << disp7segs:disp_1.salida_o
+disp1[6] << disp7segs:disp_1.salida_o
+disp2[0] << disp7segs:disp_2.salida_o
+disp2[1] << disp7segs:disp_2.salida_o
+disp2[2] << disp7segs:disp_2.salida_o
+disp2[3] << disp7segs:disp_2.salida_o
+disp2[4] << disp7segs:disp_2.salida_o
+disp2[5] << disp7segs:disp_2.salida_o
+disp2[6] << disp7segs:disp_2.salida_o
+disp3[0] << disp7segs:disp_3.salida_o
+disp3[1] << disp7segs:disp_3.salida_o
+disp3[2] << disp7segs:disp_3.salida_o
+disp3[3] << disp7segs:disp_3.salida_o
+disp3[4] << disp7segs:disp_3.salida_o
+disp3[5] << disp7segs:disp_3.salida_o
+disp3[6] << disp7segs:disp_3.salida_o
+disp4[0] << disp7segs:disp_4.salida_o
+disp4[1] << disp7segs:disp_4.salida_o
+disp4[2] << disp7segs:disp_4.salida_o
+disp4[3] << disp7segs:disp_4.salida_o
+disp4[4] << disp7segs:disp_4.salida_o
+disp4[5] << disp7segs:disp_4.salida_o
+disp4[6] << disp7segs:disp_4.salida_o
+disp5[0] << disp7segs:disp_5.salida_o
+disp5[1] << disp7segs:disp_5.salida_o
+disp5[2] << disp7segs:disp_5.salida_o
+disp5[3] << disp7segs:disp_5.salida_o
+disp5[4] << disp7segs:disp_5.salida_o
+disp5[5] << disp7segs:disp_5.salida_o
+disp5[6] << disp7segs:disp_5.salida_o
+disp6[0] << disp7segs:disp_6.salida_o
+disp6[1] << disp7segs:disp_6.salida_o
+disp6[2] << disp7segs:disp_6.salida_o
+disp6[3] << disp7segs:disp_6.salida_o
+disp6[4] << disp7segs:disp_6.salida_o
+disp6[5] << disp7segs:disp_6.salida_o
+disp6[6] << disp7segs:disp_6.salida_o
+disp7[0] << disp7segs:disp_7.salida_o
+disp7[1] << disp7segs:disp_7.salida_o
+disp7[2] << disp7segs:disp_7.salida_o
+disp7[3] << disp7segs:disp_7.salida_o
+disp7[4] << disp7segs:disp_7.salida_o
+disp7[5] << disp7segs:disp_7.salida_o
+disp7[6] << disp7segs:disp_7.salida_o
+
+
+|monociclo_fpga|monociclo:monocilo_u0
+clk_i => pc_w[2].CLK
+clk_i => pc_w[3].CLK
+clk_i => pc_w[4].CLK
+clk_i => pc_w[5].CLK
+clk_i => pc_w[6].CLK
+clk_i => pc_w[7].CLK
+clk_i => pc_w[8].CLK
+clk_i => pc_w[9].CLK
+clk_i => pc_w[10].CLK
+clk_i => pc_w[11].CLK
+clk_i => pc_w[12].CLK
+clk_i => pc_w[13].CLK
+clk_i => pc_w[14].CLK
+clk_i => pc_w[15].CLK
+clk_i => pc_w[16].CLK
+clk_i => pc_w[17].CLK
+clk_i => pc_w[18].CLK
+clk_i => pc_w[19].CLK
+clk_i => pc_w[20].CLK
+clk_i => pc_w[21].CLK
+clk_i => pc_w[22].CLK
+clk_i => pc_w[23].CLK
+clk_i => pc_w[24].CLK
+clk_i => pc_w[25].CLK
+clk_i => pc_w[26].CLK
+clk_i => pc_w[27].CLK
+clk_i => pc_w[28].CLK
+clk_i => pc_w[29].CLK
+clk_i => pc_w[30].CLK
+clk_i => pc_w[31].CLK
+rst_ni => pc_w[2].ACLR
+rst_ni => pc_w[3].ACLR
+rst_ni => pc_w[4].ACLR
+rst_ni => pc_w[5].ACLR
+rst_ni => pc_w[6].ACLR
+rst_ni => pc_w[7].ACLR
+rst_ni => pc_w[8].ACLR
+rst_ni => pc_w[9].ACLR
+rst_ni => pc_w[10].ACLR
+rst_ni => pc_w[11].ACLR
+rst_ni => pc_w[12].ACLR
+rst_ni => pc_w[13].ACLR
+rst_ni => pc_w[14].ACLR
+rst_ni => pc_w[15].ACLR
+rst_ni => pc_w[16].ACLR
+rst_ni => pc_w[17].ACLR
+rst_ni => pc_w[18].ACLR
+rst_ni => pc_w[19].ACLR
+rst_ni => pc_w[20].ACLR
+rst_ni => pc_w[21].ACLR
+rst_ni => pc_w[22].ACLR
+rst_ni => pc_w[23].ACLR
+rst_ni => pc_w[24].ACLR
+rst_ni => pc_w[25].ACLR
+rst_ni => pc_w[26].ACLR
+rst_ni => pc_w[27].ACLR
+rst_ni => pc_w[28].ACLR
+rst_ni => pc_w[29].ACLR
+rst_ni => pc_w[30].ACLR
+rst_ni => pc_w[31].ACLR
+monitor_o[0] <= ichache:icache_u0.inst_o
+monitor_o[1] <= ichache:icache_u0.inst_o
+monitor_o[2] <= ichache:icache_u0.inst_o
+monitor_o[3] <= ichache:icache_u0.inst_o
+monitor_o[4] <= ichache:icache_u0.inst_o
+monitor_o[5] <= ichache:icache_u0.inst_o
+monitor_o[6] <= ichache:icache_u0.inst_o
+monitor_o[7] <= ichache:icache_u0.inst_o
+monitor_o[8] <= ichache:icache_u0.inst_o
+monitor_o[9] <= ichache:icache_u0.inst_o
+monitor_o[10] <= ichache:icache_u0.inst_o
+monitor_o[11] <= ichache:icache_u0.inst_o
+monitor_o[12] <= ichache:icache_u0.inst_o
+monitor_o[13] <= ichache:icache_u0.inst_o
+monitor_o[14] <= ichache:icache_u0.inst_o
+monitor_o[15] <= ichache:icache_u0.inst_o
+monitor_o[16] <= ichache:icache_u0.inst_o
+monitor_o[17] <= ichache:icache_u0.inst_o
+monitor_o[18] <= ichache:icache_u0.inst_o
+monitor_o[19] <= ichache:icache_u0.inst_o
+monitor_o[20] <= ichache:icache_u0.inst_o
+monitor_o[21] <= ichache:icache_u0.inst_o
+monitor_o[22] <= ichache:icache_u0.inst_o
+monitor_o[23] <= ichache:icache_u0.inst_o
+monitor_o[24] <= ichache:icache_u0.inst_o
+monitor_o[25] <= ichache:icache_u0.inst_o
+monitor_o[26] <= ichache:icache_u0.inst_o
+monitor_o[27] <= ichache:icache_u0.inst_o
+monitor_o[28] <= ichache:icache_u0.inst_o
+monitor_o[29] <= ichache:icache_u0.inst_o
+monitor_o[30] <= ichache:icache_u0.inst_o
+monitor_o[31] <= ichache:icache_u0.inst_o
+
+
+|monociclo_fpga|monociclo:monocilo_u0|ichache:icache_u0
+addrrd_i[0] => memory.RADDR
+addrrd_i[1] => memory.RADDR1
+addrrd_i[2] => memory.RADDR2
+addrrd_i[3] => memory.RADDR3
+addrrd_i[4] => memory.RADDR4
+addrrd_i[5] => memory.RADDR5
+addrrd_i[6] => memory.RADDR6
+addrrd_i[7] => memory.RADDR7
+inst_o[0] <= memory.DATAOUT
+inst_o[1] <= memory.DATAOUT1
+inst_o[2] <= memory.DATAOUT2
+inst_o[3] <= memory.DATAOUT3
+inst_o[4] <= memory.DATAOUT4
+inst_o[5] <= memory.DATAOUT5
+inst_o[6] <= memory.DATAOUT6
+inst_o[7] <= memory.DATAOUT7
+inst_o[8] <= memory.DATAOUT8
+inst_o[9] <= memory.DATAOUT9
+inst_o[10] <= memory.DATAOUT10
+inst_o[11] <= memory.DATAOUT11
+inst_o[12] <= memory.DATAOUT12
+inst_o[13] <= memory.DATAOUT13
+inst_o[14] <= memory.DATAOUT14
+inst_o[15] <= memory.DATAOUT15
+inst_o[16] <= memory.DATAOUT16
+inst_o[17] <= memory.DATAOUT17
+inst_o[18] <= memory.DATAOUT18
+inst_o[19] <= memory.DATAOUT19
+inst_o[20] <= memory.DATAOUT20
+inst_o[21] <= memory.DATAOUT21
+inst_o[22] <= memory.DATAOUT22
+inst_o[23] <= memory.DATAOUT23
+inst_o[24] <= memory.DATAOUT24
+inst_o[25] <= memory.DATAOUT25
+inst_o[26] <= memory.DATAOUT26
+inst_o[27] <= memory.DATAOUT27
+inst_o[28] <= memory.DATAOUT28
+inst_o[29] <= memory.DATAOUT29
+inst_o[30] <= memory.DATAOUT30
+inst_o[31] <= memory.DATAOUT31
+
+
+|monociclo_fpga|disp7segs:disp_0
+entrada_i[0] => Decoder1.IN3
+entrada_i[1] => Decoder0.IN2
+entrada_i[1] => Decoder1.IN2
+entrada_i[2] => Decoder0.IN1
+entrada_i[2] => Decoder1.IN1
+entrada_i[3] => Decoder0.IN0
+entrada_i[3] => Decoder1.IN0
+salida_o[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[5] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|monociclo_fpga|disp7segs:disp_1
+entrada_i[0] => Decoder1.IN3
+entrada_i[1] => Decoder0.IN2
+entrada_i[1] => Decoder1.IN2
+entrada_i[2] => Decoder0.IN1
+entrada_i[2] => Decoder1.IN1
+entrada_i[3] => Decoder0.IN0
+entrada_i[3] => Decoder1.IN0
+salida_o[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[5] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|monociclo_fpga|disp7segs:disp_2
+entrada_i[0] => Decoder1.IN3
+entrada_i[1] => Decoder0.IN2
+entrada_i[1] => Decoder1.IN2
+entrada_i[2] => Decoder0.IN1
+entrada_i[2] => Decoder1.IN1
+entrada_i[3] => Decoder0.IN0
+entrada_i[3] => Decoder1.IN0
+salida_o[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[5] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|monociclo_fpga|disp7segs:disp_3
+entrada_i[0] => Decoder1.IN3
+entrada_i[1] => Decoder0.IN2
+entrada_i[1] => Decoder1.IN2
+entrada_i[2] => Decoder0.IN1
+entrada_i[2] => Decoder1.IN1
+entrada_i[3] => Decoder0.IN0
+entrada_i[3] => Decoder1.IN0
+salida_o[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[5] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|monociclo_fpga|disp7segs:disp_4
+entrada_i[0] => Decoder1.IN3
+entrada_i[1] => Decoder0.IN2
+entrada_i[1] => Decoder1.IN2
+entrada_i[2] => Decoder0.IN1
+entrada_i[2] => Decoder1.IN1
+entrada_i[3] => Decoder0.IN0
+entrada_i[3] => Decoder1.IN0
+salida_o[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[5] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|monociclo_fpga|disp7segs:disp_5
+entrada_i[0] => Decoder1.IN3
+entrada_i[1] => Decoder0.IN2
+entrada_i[1] => Decoder1.IN2
+entrada_i[2] => Decoder0.IN1
+entrada_i[2] => Decoder1.IN1
+entrada_i[3] => Decoder0.IN0
+entrada_i[3] => Decoder1.IN0
+salida_o[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[5] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|monociclo_fpga|disp7segs:disp_6
+entrada_i[0] => Decoder1.IN3
+entrada_i[1] => Decoder0.IN2
+entrada_i[1] => Decoder1.IN2
+entrada_i[2] => Decoder0.IN1
+entrada_i[2] => Decoder1.IN1
+entrada_i[3] => Decoder0.IN0
+entrada_i[3] => Decoder1.IN0
+salida_o[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[5] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|monociclo_fpga|disp7segs:disp_7
+entrada_i[0] => Decoder1.IN3
+entrada_i[1] => Decoder0.IN2
+entrada_i[1] => Decoder1.IN2
+entrada_i[2] => Decoder0.IN1
+entrada_i[2] => Decoder1.IN1
+entrada_i[3] => Decoder0.IN0
+entrada_i[3] => Decoder1.IN0
+salida_o[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[5] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+salida_o[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
