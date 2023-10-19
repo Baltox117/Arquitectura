@@ -1,0 +1,13 @@
+module alu (
+	input			a_i,
+	input			b_i,
+	input			sel_i,
+	output		res_o
+);
+	wire			wireand1_w;
+	wire			wireor1_w;
+	
+	assign		wireand1_w	=	a_i & b_i;
+	assign		wireor1_w	=	a_i | b_i;
+	assign		res_o			=	(sel_i) ? wireor1_w : wireand1_w;
+endmodule 
