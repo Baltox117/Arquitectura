@@ -1,0 +1,28 @@
+module monociclo (
+
+	input							clk_i,
+	input							rst_ni,
+	output	reg	[31:0] 	pc_o
+
+);
+	
+	// seccion de definicion de señales
+	
+	wire 	[31:0]	next_pc;
+	
+	// Etapa de Fetch
+	// Busqueda y emision de instrucciones
+	
+	always @(posedge clk_i, negedge rst_ni)
+	begin
+		if (!rst_ni)
+			pc_o = 4'b0;
+		else
+			pc_o = next_pc,
+	end
+	
+	// calculo de next pc
+	
+	assign next_pc = pc_o + 4'h4;
+	
+endmodule 

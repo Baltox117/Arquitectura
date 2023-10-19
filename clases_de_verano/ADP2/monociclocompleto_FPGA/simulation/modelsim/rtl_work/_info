@@ -1,0 +1,481 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/mars/ADP_Ronda3/ADP/monociclocompleto/simulation/modelsim
+vadder_calc
+Z1 !s110 1689187971
+!i10b 1
+!s100 YXPDj:@eU:m7@B34_B@SF3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ICRzc1SJj:]Z3ZinDjAI7M2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1637250914
+8/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/adder_calc.v
+F/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/adder_calc.v
+!i122 12
+L0 13 25
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1689187971.000000
+!s107 /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/adder_calc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui|/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/adder_calc.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui
+Z8 tCvgOpt 0
+vadder_shift
+R1
+!i10b 1
+!s100 0lX8S8o_4nDN6Ke0^J0em3
+R2
+Ii8Sc3glOoD_]KoE`8em5`1
+R3
+R0
+w1637250891
+8/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/adder_shift.v
+F/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/adder_shift.v
+!i122 11
+L0 14 22
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/adder_shift.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui|/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/adder_shift.v|
+!i113 1
+R6
+R7
+R8
+vALU
+R1
+!i10b 1
+!s100 VeoXTjhP7o4WLYD^F4M<J3
+R2
+I9^hO7:U@Klz33ijEWKbT<3
+R3
+R0
+w1637250853
+8/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/ALU.v
+F/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/ALU.v
+!i122 10
+L0 13 57
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui|/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/ALU.v|
+!i113 1
+R6
+R7
+R8
+n@a@l@u
+vALU_control
+R1
+!i10b 1
+!s100 G4>m<j=a:n8O=JD0XEbHg1
+R2
+Izff0YPoYNgbX]KT;AaVzT2
+R3
+R0
+w1637250793
+8/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/ALU_control.v
+F/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/ALU_control.v
+!i122 9
+L0 13 38
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/ALU_control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui|/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/ALU_control.v|
+!i113 1
+R6
+R7
+R8
+n@a@l@u_control
+vbranch_control
+R1
+!i10b 1
+!s100 0mH9Ee6L8j5ULjN[b[LhZ0
+R2
+IdoYgbcI[[lHcLF;[e9PG02
+R3
+R0
+w1637250955
+8/home/mars/ADP_Ronda3/ADP/monociclocompleto/branch_control.v
+F/home/mars/ADP_Ronda3/ADP/monociclocompleto/branch_control.v
+!i122 13
+L0 14 46
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/mars/ADP_Ronda3/ADP/monociclocompleto/branch_control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto|/home/mars/ADP_Ronda3/ADP/monociclocompleto/branch_control.v|
+!i113 1
+R6
+Z9 !s92 -vlog01compat -work work +incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto
+R8
+vControl
+R1
+!i10b 1
+!s100 29e32[FBm_f703k2cz28;2
+R2
+Ihb:[F7YWS_gd;Y_z0VDdR1
+R3
+R0
+w1637250721
+8/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Control.v
+F/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Control.v
+!i122 8
+L0 14 71
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui|/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Control.v|
+!i113 1
+R6
+R7
+R8
+n@control
+vDatamemory
+R1
+!i10b 1
+!s100 f6ZmoENnFgl?AjoYVj8zC0
+R2
+I4DcBNWlC1_GgI5>Q27FG53
+R3
+R0
+Z10 w1637250231
+Z11 8/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Datamemory.v
+Z12 F/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Datamemory.v
+!i122 7
+L0 1 27
+R4
+r1
+!s85 0
+31
+R5
+Z13 !s107 /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Datamemory.v|
+Z14 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui|/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Datamemory.v|
+!i113 1
+R6
+R7
+R8
+n@datamemory
+vmeminstruction
+R1
+!i10b 1
+!s100 ^Zi;Y9QH^MUj3`F`Eh4=00
+R2
+I^oP:>OjIC;D@[bN4WA]4_0
+R3
+R0
+w1689187330
+8/home/mars/ADP_Ronda3/ADP/monociclocompleto/meminstruction.v
+F/home/mars/ADP_Ronda3/ADP/monociclocompleto/meminstruction.v
+!i122 14
+L0 13 23
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/mars/ADP_Ronda3/ADP/monociclocompleto/meminstruction.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto|/home/mars/ADP_Ronda3/ADP/monociclocompleto/meminstruction.v|
+!i113 1
+R6
+R9
+R8
+vmemory_data
+R1
+!i10b 1
+!s100 MTc;YU1M=_DljHR7VnPl@1
+R2
+Ie`7S6:MlF8C]dSQZX0g?S0
+R3
+R0
+R10
+R11
+R12
+!i122 7
+L0 29 44
+R4
+r1
+!s85 0
+31
+R5
+R13
+R14
+!i113 1
+R6
+R7
+R8
+vMonociclo
+R1
+!i10b 1
+!s100 NlZd6P2@K9KRi4MicjAKQ2
+R2
+ILCWUl3SKP>K>JSNo0oRjY1
+R3
+R0
+Z15 w1637250771
+Z16 8/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Monociclo.v
+Z17 F/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Monociclo.v
+!i122 6
+L0 14 231
+R4
+r1
+!s85 0
+31
+Z18 !s108 1689187970.000000
+Z19 !s107 /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Monociclo.v|
+Z20 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui|/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Monociclo.v|
+!i113 1
+R6
+R7
+R8
+n@monociclo
+vMonociclo_tb
+R1
+!i10b 1
+!s100 GlanEXOfPe?MdFBO8YeO83
+R2
+IWD2YC07Y?9RM7mEAFzUg;1
+R3
+R0
+R15
+R16
+R17
+!i122 6
+L0 246 31
+R4
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 1
+R6
+R7
+R8
+n@monociclo_tb
+vMonociclo_vlg_tst
+R1
+!i10b 1
+!s100 N@P8^jBMYZWf=_gz410MG0
+R2
+ICXXQ3VW1kF7_M6Fh<m7g>0
+R3
+R0
+w1689186336
+8/home/mars/ADP_Ronda3/ADP/monociclocompleto/simulation/modelsim/Monociclo.vt
+F/home/mars/ADP_Ronda3/ADP/monociclocompleto/simulation/modelsim/Monociclo.vt
+!i122 15
+L0 29 42
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/mars/ADP_Ronda3/ADP/monociclocompleto/simulation/modelsim/Monociclo.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/simulation/modelsim|/home/mars/ADP_Ronda3/ADP/monociclocompleto/simulation/modelsim/Monociclo.vt|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/simulation/modelsim
+R8
+n@monociclo_vlg_tst
+vMux_ALUSrc
+Z21 !s110 1689187970
+!i10b 1
+!s100 3zWc@AIlhBYbhn0?RR>5C2
+R2
+IXE?mP?KK@ICP;OOm0@<062
+R3
+R0
+w1637249590
+8/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Mux_ALUSrc.v
+F/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Mux_ALUSrc.v
+!i122 5
+L0 14 16
+R4
+r1
+!s85 0
+31
+R18
+!s107 /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Mux_ALUSrc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui|/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Mux_ALUSrc.v|
+!i113 1
+R6
+R7
+R8
+n@mux_@a@l@u@src
+vPC_Calc
+R21
+!i10b 1
+!s100 c99maULcFjJ0cEh=NN@O^2
+R2
+IWecJEZjM?aBC>ng]@]KPL3
+R3
+R0
+w1624461500
+8/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/PC_Calc.v
+F/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/PC_Calc.v
+!i122 4
+L0 14 23
+R4
+r1
+!s85 0
+31
+R18
+!s107 /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/PC_Calc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui|/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/PC_Calc.v|
+!i113 1
+R6
+R7
+R8
+n@p@c_@calc
+vRegFile
+R21
+!i10b 1
+!s100 ;k_L^`S]BHZZMl=k?_DaT1
+R2
+I8hA>Q_3>a41BlVYU1TzIR0
+R3
+R0
+w1620413750
+8/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/RegFile.v
+F/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/RegFile.v
+!i122 3
+L0 13 70
+R4
+r1
+!s85 0
+31
+R18
+!s107 /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/RegFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui|/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/RegFile.v|
+!i113 1
+R6
+R7
+R8
+n@reg@file
+vshiftL
+R21
+!i10b 1
+!s100 f9:M2Sidib@iG`SXU`8_N0
+R2
+IN66T35H`3i=L@bJCdZ=U02
+R3
+R0
+w1637248747
+8/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/shiftL.v
+F/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/shiftL.v
+!i122 2
+L0 14 8
+R4
+r1
+!s85 0
+31
+R18
+!s107 /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/shiftL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui|/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/shiftL.v|
+!i113 1
+R6
+R7
+R8
+nshift@l
+vSignExt
+R21
+!i10b 1
+!s100 BWH2J0G1ZC0Hb[i10na[c2
+R2
+I1GbkHV5MEhLdbf3f=G>OA2
+R3
+R0
+w1637248725
+8/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/SignExt.v
+F/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/SignExt.v
+!i122 1
+L0 14 29
+R4
+r1
+!s85 0
+31
+R18
+!s107 /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/SignExt.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui|/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/SignExt.v|
+!i113 1
+R6
+R7
+R8
+n@sign@ext
+vSumador
+R21
+!i10b 1
+!s100 b7YT:cM`nVHVWTbSMkVUi0
+R2
+I;ShYUhizH04Um<IaINbL_2
+R3
+R0
+Z22 w1637248696
+Z23 8/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Sumador.v
+Z24 F/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Sumador.v
+!i122 0
+L0 14 28
+R4
+r1
+!s85 0
+31
+R18
+Z25 !s107 /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Sumador.v|
+Z26 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui|/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Sumador.v|
+!i113 1
+R6
+R7
+R8
+n@sumador
+vSumador_2bits
+R21
+!i10b 1
+!s100 DIkaCEibBbE0DIC[dz?hK3
+R2
+I`6MP<[5TNkePZhY<h5<_n1
+R3
+R0
+R22
+R23
+R24
+!i122 0
+L0 44 14
+R4
+r1
+!s85 0
+31
+R18
+R25
+R26
+!i113 1
+R6
+R7
+R8
+n@sumador_2bits

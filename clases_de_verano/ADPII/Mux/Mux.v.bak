@@ -1,0 +1,11 @@
+module Mux (
+	input			a_i,
+	input			b_i,
+	input			s_i,
+	output		c_o
+);
+
+	//Multiplexor - Algoritmo
+	assign c_o = (s_i) ? a_i : b_i;
+
+endmodule 

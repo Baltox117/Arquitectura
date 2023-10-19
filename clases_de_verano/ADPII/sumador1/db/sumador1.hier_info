@@ -1,0 +1,11 @@
+|sumador1
+a_i => XOR1.IN0
+a_i => AND2.IN0
+b_i => XOR1.IN1
+b_i => AND2.IN1
+c_i => XOR2.IN1
+c_i => AND1.IN1
+c_o <= OR1.DB_MAX_OUTPUT_PORT_TYPE
+s_o <= XOR2.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,134 @@
+//**********************************************************************************************//
+//  TITLE:                  Monociclo_FPGA.v  					                                             //
+//                                                                                              //
+//  PROJECT:                Monociclo para ser Verificado en el FPGA                                                              //
+//  LANGUAGE:               Verilog						                                             //
+//                                                                                              //
+//  AUTHOR:                 Lagarto Development Team - lagarto@cic.ipn.mx						      //
+//                                                                                              //
+//  REVISION:               1.0 - Creation                                     //
+//									 3a Ronda de Talleres - Escuela Nacional de Semiconductores
+//                                                                                              //
+//**********************************************************************************************//
+
+module monociclocompleto_fpga (
+	input				clk_i,
+	input				rst_ni,
+	output	[6:0]	disp0,
+	output	[6:0]	disp1,
+	output	[6:0]	disp2,
+	output	[6:0]	disp3,
+	output	[6:0]	disp4,
+	output	[6:0]	disp5,
+	output	[6:0]	disp6,
+	output	[6:0]	disp7,
+	output			lcd_on,	
+	output			lcd_blon,
+	output			lcd_rw,	
+	output			lcd_en,	
+	output			lcd_rs,	
+	output	[7:0]	lcd_data,
+	output			enable_int_0
+);
+	wire	[255:0]	MP;
+	wire	[31:0]	PC_o;
+	wire	[63:0]	data_int_0;
+	wire	[4:0]		addr_int_0;
+//	wire				enable_int_0;
+	wire				clk_div;
+	
+	divfreq divisor	(
+		.clk_i		(clk_i),
+		.rst_ni		(rst_ni),
+		.clk_o		(clk_div)
+	);
+
+	assign	MP[255:248]	=	8'd80;	//P
+	assign	MP[247:240]	=	8'd67;	//C
+	assign	MP[239:232]	=	8'd58;	//:
+	assign	MP[231:224]	=	8'd45;	//-
+	assign	MP[223:216]	=	8'd45;	//-
+	assign	MP[215:208]	=	8'd45;	//-
+	assign	MP[207:200]	=	8'd45;	//-
+	assign	MP[199:192]	=	8'd45;	//-
+	assign	MP[191:184]	=	(PC_o[31:28]<10) ?	PC_o[31:28] + 8'h30 : PC_o[31:28] + 8'h37;	//-
+	assign	MP[183:176]	=	(PC_o[27:24]<10) ?	PC_o[27:24] + 8'h30 : PC_o[27:24] + 8'h37;	//-
+	assign	MP[175:168]	=	(PC_o[23:20]<10) ?	PC_o[23:20] + 8'h30 : PC_o[23:20] + 8'h37;	//-
+	assign	MP[167:160]	=	(PC_o[19:16]<10) ?	PC_o[19:16] + 8'h30 : PC_o[19:16] + 8'h37;	//-
+	assign	MP[159:152]	=	(PC_o[15:12]<10) ?	PC_o[15:12] + 8'h30 : PC_o[15:12] + 8'h37;	//-
+	assign	MP[151:144]	=	(PC_o[11:8]<10 ) ? 	PC_o[11:8]  + 8'h30 : PC_o[11:8] + 8'h37;	//-
+	assign	MP[143:136]	=	(PC_o[7:4]<10  ) ? 	PC_o[7:4]   + 8'h30 : PC_o[7:4] + 8'h37;	//-
+	assign	MP[135:128]	=	(PC_o[3:0]<10  ) ? 	PC_o[3:0]   + 8'h30 : PC_o[3:0] + 8'h37;	//-
+	
+	assign	MP[127:120]	=	(data_int_0[63:60]<10) ? data_int_0[63:60] + 8'h30 : data_int_0[63:60] + 8'h37;	
+	assign	MP[119:112]	=	(data_int_0[59:56]<10) ? data_int_0[59:56] + 8'h30 : data_int_0[59:56] + 8'h37;
+	assign	MP[111:104]	=	(data_int_0[55:52]<10) ? data_int_0[55:52] + 8'h30 : data_int_0[55:52] + 8'h37;
+	assign	MP[103:96]	=	(data_int_0[51:48]<10) ? data_int_0[51:48] + 8'h30 : data_int_0[51:48] + 8'h37;
+	assign	MP[95:88]	=	(data_int_0[47:44]<10) ? data_int_0[47:44] + 8'h30 : data_int_0[47:44] + 8'h37;
+	assign	MP[87:80]	=	(data_int_0[43:40]<10) ? data_int_0[43:40] + 8'h30 : data_int_0[43:40] + 8'h37;	
+	assign	MP[79:72]	=	(data_int_0[39:36]<10) ? data_int_0[39:36] + 8'h30 : data_int_0[39:36] + 8'h37;	
+	assign	MP[71:64]	=	(data_int_0[35:32]<10) ? data_int_0[35:32] + 8'h30 : data_int_0[35:32] + 8'h37;	
+	assign	MP[63:56]	=	(data_int_0[31:28]<10) ? data_int_0[31:28] + 8'h30 : data_int_0[31:28] + 8'h37;
+	assign	MP[55:48]	=	(data_int_0[27:24]<10) ? data_int_0[27:24] + 8'h30 : data_int_0[27:24] + 8'h37;
+	assign	MP[47:40]	=	(data_int_0[23:20]<10) ? data_int_0[23:20] + 8'h30 : data_int_0[23:20] + 8'h37;
+	assign	MP[39:32]	=	(data_int_0[19:16]<10) ? data_int_0[19:16] + 8'h30 : data_int_0[19:16] + 8'h37;
+	assign	MP[31:24]	=	(data_int_0[15:12]<10) ? data_int_0[15:12] + 8'h30 : data_int_0[15:12] + 8'h37;
+	assign	MP[23:16]	=	(data_int_0[11:8]<10) ?  data_int_0[11:8] + 8'h30 : data_int_0[11:8] + 8'h37;	
+	assign	MP[15:8]		=	(data_int_0[7:4]<10) ?   data_int_0[7:4] + 8'h30 : data_int_0[7:4] + 8'h37;	
+	assign	MP[7:0]		=	(data_int_0[3:0]<10) ?   data_int_0[3:0] + 8'h30 : data_int_0[3:0] + 8'h37;		
+	
+	lagarto_core lagarto_core_debug(
+		.clk					(clk_div),
+		.rst					(rst_ni),
+		.PC					(PC_o),
+		.data_int_0			(data_int_0),
+		.addr_int_0			(addr_int_0),
+		.enable_int_0		(enable_int_0)
+	);
+	
+	deco7seg deco0(
+		.hex_i		(addr_int_0[3:0]),
+		.num_o		(disp0)
+	);
+	deco7seg deco1(
+		.hex_i		({3'b0,addr_int_0[4]}),
+		.num_o		(disp1)
+	);
+	deco7seg deco2(
+		.hex_i		(4'hx),
+		.num_o		(disp2)
+	);
+	deco7seg deco3(
+		.hex_i		(4'hx),
+		.num_o		(disp3)
+	);
+	deco7seg deco4(
+		.hex_i		(4'hx),
+		.num_o		(disp4)
+	);
+	deco7seg deco5(
+		.hex_i		(4'hd),
+		.num_o		(disp5)
+	);
+	
+	deco7seg deco6(
+		.hex_i		(4'hd),
+		.num_o		(disp6)
+	);
+	deco7seg deco7(
+		.hex_i		(4'ha),
+		.num_o		(disp7)
+	);	
+	LCDASCII	lcd_screen(				
+		.CLK			(clk_i),
+		.RST_N		(clk_div),
+		.MP			(MP),
+		//LCD Module 16X2																	
+		.LCD_ON		(lcd_on	),														//LCD Power ON/OFF
+		.LCD_BLON	(lcd_blon),													//LCD Back Light ON/OFF
+		.LCD_RW		(lcd_rw	),														//LCD Read/Write Select, 0 = Write, 1 = Read
+		.LCD_EN		(lcd_en	),														//LCD Enable
+		.LCD_RS		(lcd_rs	),														//LCD Command/Data Select, 0 = Command, 1 = Data
+		.LCD_DATA	(lcd_data)													//LCD Data bus 8 bits
+	);
+endmodule 

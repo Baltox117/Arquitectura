@@ -1,0 +1,20 @@
+module monociclo (
+	input					rst_ni,
+	input					clk_i,
+	output		[31:0]icache_inst_o
+);
+	//Seccion de declaracion de señales
+	reg			[31:0]pc_o;
+	wire			[31:0]pc_next;
+	
+	//Generacion de PC - Contador de Programa
+	always @(posedge clk_i, negedge rst_ni)
+	begin
+		if (rst_ni == 1'b0)
+			pc_o	<=	32'b0;
+		else
+			pc_o <= pc_next;
+	end
+	//Generar PC_NEXT 
+	assign	pc_next = pc_o + 32'h4;
+endmodule 

@@ -1,0 +1,277 @@
+# do monociclo_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/mars/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui {/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Sumador.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:50 on Jul 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui" /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Sumador.v 
+# -- Compiling module Sumador
+# -- Compiling module Sumador_2bits
+# 
+# Top level modules:
+# 	Sumador
+# End time: 12:52:50 on Jul 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui {/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/SignExt.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:50 on Jul 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui" /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/SignExt.v 
+# -- Compiling module SignExt
+# 
+# Top level modules:
+# 	SignExt
+# End time: 12:52:50 on Jul 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui {/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/shiftL.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:50 on Jul 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui" /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/shiftL.v 
+# -- Compiling module shiftL
+# 
+# Top level modules:
+# 	shiftL
+# End time: 12:52:50 on Jul 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui {/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/RegFile.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:50 on Jul 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui" /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/RegFile.v 
+# -- Compiling module RegFile
+# 
+# Top level modules:
+# 	RegFile
+# End time: 12:52:50 on Jul 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui {/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/PC_Calc.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:50 on Jul 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui" /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/PC_Calc.v 
+# -- Compiling module PC_Calc
+# 
+# Top level modules:
+# 	PC_Calc
+# End time: 12:52:50 on Jul 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui {/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Mux_ALUSrc.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:50 on Jul 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui" /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Mux_ALUSrc.v 
+# -- Compiling module Mux_ALUSrc
+# 
+# Top level modules:
+# 	Mux_ALUSrc
+# End time: 12:52:50 on Jul 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui {/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Monociclo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:50 on Jul 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui" /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Monociclo.v 
+# -- Compiling module Monociclo
+# -- Compiling module Monociclo_tb
+# 
+# Top level modules:
+# 	Monociclo_tb
+# End time: 12:52:51 on Jul 12,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui {/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Datamemory.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:51 on Jul 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui" /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Datamemory.v 
+# -- Compiling module Datamemory
+# -- Compiling module memory_data
+# 
+# Top level modules:
+# 	Datamemory
+# End time: 12:52:51 on Jul 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui {/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Control.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:51 on Jul 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui" /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Control.v 
+# -- Compiling module Control
+# 
+# Top level modules:
+# 	Control
+# End time: 12:52:51 on Jul 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui {/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/ALU_control.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:51 on Jul 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui" /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/ALU_control.v 
+# -- Compiling module ALU_control
+# 
+# Top level modules:
+# 	ALU_control
+# End time: 12:52:51 on Jul 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui {/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/ALU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:51 on Jul 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui" /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:52:51 on Jul 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui {/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/adder_shift.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:51 on Jul 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui" /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/adder_shift.v 
+# -- Compiling module adder_shift
+# 
+# Top level modules:
+# 	adder_shift
+# End time: 12:52:51 on Jul 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui {/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/adder_calc.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:51 on Jul 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui" /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/adder_calc.v 
+# -- Compiling module adder_calc
+# 
+# Top level modules:
+# 	adder_calc
+# End time: 12:52:51 on Jul 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto {/home/mars/ADP_Ronda3/ADP/monociclocompleto/branch_control.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:51 on Jul 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto" /home/mars/ADP_Ronda3/ADP/monociclocompleto/branch_control.v 
+# -- Compiling module branch_control
+# 
+# Top level modules:
+# 	branch_control
+# End time: 12:52:51 on Jul 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto {/home/mars/ADP_Ronda3/ADP/monociclocompleto/meminstruction.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:51 on Jul 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto" /home/mars/ADP_Ronda3/ADP/monociclocompleto/meminstruction.v 
+# -- Compiling module meminstruction
+# 
+# Top level modules:
+# 	meminstruction
+# End time: 12:52:51 on Jul 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/simulation/modelsim {/home/mars/ADP_Ronda3/ADP/monociclocompleto/simulation/modelsim/Monociclo.vt}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:51 on Jul 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/mars/ADP_Ronda3/ADP/monociclocompleto/simulation/modelsim" /home/mars/ADP_Ronda3/ADP/monociclocompleto/simulation/modelsim/Monociclo.vt 
+# -- Compiling module Monociclo_vlg_tst
+# 
+# Top level modules:
+# 	Monociclo_vlg_tst
+# End time: 12:52:51 on Jul 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  Monociclo_vlg_tst
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" Monociclo_vlg_tst 
+# Start time: 12:52:51 on Jul 12,2023
+# Loading work.Monociclo_vlg_tst
+# Loading work.Monociclo
+# Loading work.PC_Calc
+# Loading work.meminstruction
+# Loading work.Control
+# Loading work.RegFile
+# Loading work.SignExt
+# Loading work.Mux_ALUSrc
+# Loading work.shiftL
+# Loading work.ALU
+# Loading work.Sumador
+# Loading work.adder_calc
+# Loading work.adder_shift
+# Loading work.Datamemory
+# Loading work.memory_data
+# Loading work.branch_control
+# Loading work.ALU_control
+# Loading work.Sumador_2bits
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'adder_calcU26'.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /Monociclo_vlg_tst/DUT/adder_calcU26 File: /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Monociclo.v Line: 183
+# ** Warning: (vsim-3722) /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Monociclo.v(183): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'adder_shiftU27'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /Monociclo_vlg_tst/DUT/adder_shiftU27 File: /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Monociclo.v Line: 195
+# ** Warning: (vsim-3722) /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Monociclo.v(195): [TFMPC] - Missing connection for port 'cout'.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+do /home/mars/ADP_Ronda3/ADP/monociclocompleto/simulation/modelsim/monociclotaller.do
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'adder_calcU26'.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /Monociclo_vlg_tst/DUT/adder_calcU26 File: /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Monociclo.v Line: 183
+# ** Warning: (vsim-3722) /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Monociclo.v(183): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'adder_shiftU27'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /Monociclo_vlg_tst/DUT/adder_shiftU27 File: /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Monociclo.v Line: 195
+# ** Warning: (vsim-3722) /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Monociclo.v(195): [TFMPC] - Missing connection for port 'cout'.
+run
+# Running testbench
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -all
+run -all
+add wave -position insertpoint  \
+sim:/Monociclo_vlg_tst/DUT/Data_memory_U15/memory_u0/Cache
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'adder_calcU26'.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /Monociclo_vlg_tst/DUT/adder_calcU26 File: /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Monociclo.v Line: 183
+# ** Warning: (vsim-3722) /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Monociclo.v(183): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'adder_shiftU27'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /Monociclo_vlg_tst/DUT/adder_shiftU27 File: /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Monociclo.v Line: 195
+# ** Warning: (vsim-3722) /home/mars/ADP_Ronda3/ADP/monociclocompleto/MonocicloArqui/Monociclo.v(195): [TFMPC] - Missing connection for port 'cout'.
+run
+# Running testbench
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -all
+# End time: 14:14:26 on Jul 12,2023, Elapsed time: 1:21:35
+# Errors: 0, Warnings: 4

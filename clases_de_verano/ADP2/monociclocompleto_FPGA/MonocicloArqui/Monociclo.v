@@ -1,0 +1,278 @@
+//**********************************************************************************************//
+//  TITLE:                  Monociclo.v  					                                             //
+//                                                                                              //
+//  PROJECT:                Monociclo                                                               //
+//  LANGUAGE:               Verilog						                                             //
+//                                                                                              //
+//  AUTHOR:                 Lagarto Development Team - lagarto@cic.ipn.mx						      //
+//                                                                                              //
+//  REVISION:               0.1 - First Revision - Creation                                     //
+//                                                                                              //
+//**********************************************************************************************//
+
+
+module Monociclo #(
+	parameter				WORD = 32
+)(
+	input						clk_i,
+	input						rst_ni,
+	output	[WORD-1:0]	wb_result_o,	//Se monitorea Resultado de WB
+	output	[WORD-1:0] 	mux_branch,		//Se monitorea el PC
+	output	[WORD-1:0] 	if_data_o		//Se monitorea la Instruccion
+
+);
+
+//======================================================================
+//  PC CALCULATION
+//======================================================================
+	wire		[WORD-1:0]	pc_o;	
+//	wire     [WORD-1:0] 	mux_branch;
+	wire 						Control_branch;
+	wire						ex_zerof_o;
+	wire Ex_branch_o ;
+
+	PC_Calc	PCCalc_U1 (
+		.clk_i			(clk_i),
+		.rst_ni			(rst_ni),
+		.pc_i     		(mux_branch),
+		.pc_o				(pc_o)
+	);
+
+//======================================================================
+//  INSTRUCTION FETCH STAGE
+//======================================================================
+//	wire		[WORD-1:0]	if_data_o;
+	
+	meminstruction		InstMem_U2 (
+		.addread_i			(pc_o[9:2]),					//Dirección de lectura
+		.dataread_o			(if_data_o)						//Dato de lectura		
+	);
+
+//======================================================================
+//  CONTROL - DECO STAGE
+//======================================================================
+wire [1:0] Alu_op;
+wire Regwrite;
+wire controlsrc;
+wire memread;
+wire	control;
+
+wire MemWrite;
+
+    Control Control_U3(
+        .Instruction_i(if_data_o[6:0]),
+        .Branch_o(Control_branch),
+        .Memread_o(memread),
+        .Memtoreg_o(control),
+        .Aluop_o(Alu_op),
+        .Memwrite_o(MemWrite),
+        .Alusrc_o(controlsrc),
+        .Regwrite_o(Regwrite)
+	);	
+
+//======================================================================
+//  REGISTER READ STAGE
+//======================================================================
+	wire		[WORD-1:0]	rf_datars1_o;
+	wire		[WORD-1:0]	rf_datars2_o;
+	wire [WORD-1:0] muxdata_o; 
+
+	RegFile	RegFile_U3 (
+		.clk_i			(clk_i),					//Reloj
+		.we_i				(Regwrite),					//Habilitación de Escritura
+		.addar_i			(if_data_o[19:15]),	//Puerto RS1 de lectura
+		.addbr_i			(if_data_o[24:20]),	//Puerto RS2 de lectura
+		.addaw_i			(if_data_o[11:7]),	//Puerto RD de escritura
+		.dataaw_i		(muxdata_o),			//Dato A de escritura
+		.dataar_o		(rf_datars1_o),		//Dato RS1 de lectura
+		.databr_o		(rf_datars2_o)			//Dato RS2 de lectura
+	);
+
+	
+//======================================================================
+//  SIGN EXTEND
+//======================================================================
+	wire			[WORD-1:0]	ex_datars2_i;
+	wire			[WORD-1:0]	se_datars2_o;
+	wire							ALUsrc;
+	
+	assign						ALUsrc = 1'b1;
+	
+	assign						ex_datars2_i = (ALUsrc) ? se_datars2_o : rf_datars2_o;
+	
+	SignExt	SignExtend_U4 (
+		.if_inst_i		(if_data_o),						//Instrucción de IF
+		.se_datars2_o	(se_datars2_o)
+	);
+
+//======================================================================
+//  ALU MUX = READ REGISTER OR IMM GEN
+//======================================================================
+wire [WORD-1:0]	Mux_alu_src_o;
+
+Mux_ALUSrc Mux_U6(
+	.register_i(rf_datars2_o),
+	.sign_ext_i(se_datars2_o),
+	.control(controlsrc),
+	.data_o(Mux_alu_src_o)
+    );
+
+//======================================================================
+//  WB MUX = DATA MEM OR ALU RESULT
+//======================================================================
+
+   wire			[WORD-1:0]	read_data_mem;
+   
+
+Mux_ALUSrc Mux_memory(
+	.register_i(wb_result_o),
+	.sign_ext_i(read_data_mem),
+	.control(control),
+	.data_o(muxdata_o)
+    );
+    
+    
+//======================================================================
+//  MUX BRANCH = BRANCH OR ZERO FLAG
+//======================================================================
+
+    wire  [WORD-1:0] addo_pc;
+    wire  [WORD-1:0]  add_o;
+
+    
+    Mux_ALUSrc Mux_and(
+        .register_i(addo_pc),
+        .sign_ext_i(add_o),
+        .control(Ex_branch_o),
+        .data_o(mux_branch)
+        );
+
+
+
+//======================================================================
+//  SHIFT LEFT
+//======================================================================
+
+	wire			[WORD-1:0]	sl_1bit_o;
+	
+shiftL Sleft_1_U7(
+	.sign_ext(se_datars2_o),
+	.ls_o (sl_1bit_o)
+);
+	
+	
+//======================================================================
+//  EXECUTION STAGE
+//======================================================================
+	
+	
+	wire [3:0]  Alu_control_out;
+	
+	ALU	Execution_U5 (
+		.ex_datars1_i	(rf_datars1_o),
+		.ex_datars2_i	(Mux_alu_src_o),
+		.ex_aluop_i		(Alu_control_out),					//4'b0 = Suma
+		//.ex_aluop_i		(4'h0),					//4'b0 = Suma
+		.ex_data_o		(wb_result_o),
+		.ex_zerof_o		(ex_zerof_o)	
+	);
+	
+//======================================================================
+//  PC CALCULATION
+//======================================================================
+
+
+     adder_calc adder_calcU26(
+			.cin	(1'b0),
+         .opea (pc_o),        //operador a
+         .sal (addo_pc)        //resultado.
+         
+     
+     );
+
+//======================================================================
+//  ADDER SHIFT FOR BRACHES
+//======================================================================
+
+  adder_shift adder_shiftU27(
+				  .cin	(1'b0),
+              .opea (pc_o),		//operador a
+              .opeb (sl_1bit_o),        //operador b
+              .sal (add_o)        //resultado
+          
+          );
+	
+	
+//======================================================================
+//  DATA MEMORY STAGE
+//======================================================================
+
+    Datamemory Data_memory_U15(
+       .clk_i(clk_i),
+       .we_i(MemWrite),
+       .memread(memread),
+       .rst_ni(rst_ni),			//Reset bajo activo
+       .addr_i(wb_result_o[11:2]),
+       .datar_o (read_data_mem),
+       .dataw_i(rf_datars2_o)
+       
+    );
+    
+
+//======================================================================
+//  BRANCH CONTROL
+//======================================================================
+
+
+
+ branch_control  branch_control_U25(
+    .Funct3_i    (if_data_o[14:12]),
+    .branch      (Control_branch),
+	 .ex_zerof_o (ex_zerof_o),
+    .Ex_branch_o (Ex_branch_o)
+	 
+	 );
+
+
+//======================================================================
+//  ALU CONTROL
+//======================================================================
+ALU_control Alu_control_U11(
+    .Funct3_i(if_data_o[14:12]),
+    .Funct7_i(if_data_o[30]),
+    .Ex_aluop_o(Alu_control_out),
+    .Aluop_i(Alu_op)	
+);	
+endmodule 
+
+module Monociclo_tb ();
+	reg				clk_i;
+	reg				rst_ni;
+	wire	[31:0]	wb_result_o;
+
+	Monociclo	Monociclo_U1 (
+		.clk_i			(clk_i),
+		.rst_ni			(rst_ni),
+		.wb_result_o	(wb_result_o)
+	
+	);
+	
+	initial
+	begin
+		clk_i		= 1'b1;
+		rst_ni	= 1'b0;
+	end
+	
+	always
+	begin
+		#50
+			clk_i = ~clk_i;			//
+	end
+	
+	always
+	begin
+		#300
+			rst_ni = 1'b1;
+	end
+	
+endmodule

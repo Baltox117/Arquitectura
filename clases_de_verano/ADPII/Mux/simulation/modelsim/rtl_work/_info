@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/ADPII/Mux/simulation/modelsim
+vMux
+!s110 1685469208
+!i10b 1
+!s100 AoUz@dXfMZ]iBk3<aTL=o0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I7omLB2jgTA:_N@DMdznz23
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1685389847
+8F:/ADPII/Mux/Mux.v
+FF:/ADPII/Mux/Mux.v
+!i122 0
+L0 1 20
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1685469208.000000
+!s107 F:/ADPII/Mux/Mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/ADPII/Mux|F:/ADPII/Mux/Mux.v|
+!i113 1
+Z4 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+F:/ADPII/Mux
+Z5 tCvgOpt 0
+n@mux
+vMux_vlg_tst
+!s110 1685469211
+!i10b 1
+!s100 FZL4RdLZTZ^cEWkMz6@kT3
+R1
+Ik2D>AeWo<P5DQ64W?<kbR1
+R2
+R0
+w1685469141
+8F:/ADPII/Mux/simulation/modelsim/Mux.vt
+FF:/ADPII/Mux/simulation/modelsim/Mux.vt
+!i122 1
+L0 29 47
+R3
+r1
+!s85 0
+31
+!s108 1685469211.000000
+!s107 F:/ADPII/Mux/simulation/modelsim/Mux.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/ADPII/Mux/simulation/modelsim|F:/ADPII/Mux/simulation/modelsim/Mux.vt|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+F:/ADPII/Mux/simulation/modelsim
+R5
+n@mux_vlg_tst

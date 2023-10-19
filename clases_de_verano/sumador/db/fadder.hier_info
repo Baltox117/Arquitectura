@@ -1,0 +1,13 @@
+|fadder
+a_i => xor1.IN0
+a_i => and1_w.IN0
+a_i => or1.IN0
+b_i => xor1.IN1
+b_i => and1_w.IN1
+b_i => or1.IN1
+c_i => and2.IN1
+c_i => xor2.IN1
+s_o <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_o <= or2.DB_MAX_OUTPUT_PORT_TYPE
+
+
