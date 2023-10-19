@@ -1,0 +1,14 @@
+|fulladder
+a_i => wireand1_w.IN0
+a_i => wireand3_w.IN0
+a_i => wirexor1_w.IN0
+b_i => wireand2_w.IN0
+b_i => wireand3_w.IN1
+b_i => wirexor1_w.IN1
+c_i => wireand1_w.IN1
+c_i => wireand2_w.IN1
+c_i => res_o.IN1
+c_o <= c_o.DB_MAX_OUTPUT_PORT_TYPE
+res_o <= res_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
