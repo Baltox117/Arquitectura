@@ -1,0 +1,27 @@
+module rom(
+	input			[3:0]	dir_i,
+	output reg	[31:0]dato_o
+
+);
+	always @(*)
+	begin
+		case(dir_i)
+			4'h0: dato_o	=	32'hffffffff;
+			4'h1: dato_o	=	32'haaaaaaaa;
+			4'h2: dato_o	=	32'habcdef01;
+			4'h3: dato_o	=	32'h01abcdef;
+			4'h4: dato_o	=	32'h01234567;
+			4'h5: dato_o	=	32'h76543210;
+			4'h6: dato_o	=	32'ha1b2c3d4;
+			4'h7: dato_o	=	32'h4d3c2b1a;
+			4'h8: dato_o	=	32'h02468ace;
+			4'h9: dato_o	=	32'h13579bdf;
+			4'ha: dato_o	=	32'heca86420;
+			4'hb: dato_o	=	32'hfdb97531;
+			4'hc: dato_o	=	32'hbabadebb;
+			4'hd: dato_o	=	32'he2c03333;
+			4'he: dato_o	=	32'h42042069;
+			4'hf: dato_o	=	32'h00000000;
+		endcase
+	end
+endmodule

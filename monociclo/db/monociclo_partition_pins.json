@@ -60,6 +60,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "monitor_o[14]",
+					"strict" : false
+				},
+				{
 					"name" : "monitor_o[15]",
 					"strict" : false
 				},

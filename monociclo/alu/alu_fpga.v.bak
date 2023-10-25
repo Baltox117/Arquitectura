@@ -1,0 +1,30 @@
+module alu_fpga (
+	input			[3:0]	dira_i,
+	input			[3:0]	dirb_i,
+);
+	wire			[31:0]operadora_w;
+	wire			[31:0]operadorb_w;
+	//instancia de rom para a
+	rom	rom_a(
+		.dir_i			(dira_i),
+		.dato_o			(operadora_w)
+	);
+	//instancia de rom para b
+	rom	rom_b(
+		.dir_i			(dirb_i),
+		.dato_o			(operadorb_w)
+	);
+	
+	//instancia de la alu
+	aluN alu#(
+		.N				(32)
+	)
+	(
+		.A_i			(),
+		.B_i			(),
+		.c_i			(),
+		.ope_i		(),
+		.c_o			(),
+		.sal_o		()
+	);
+endmodule

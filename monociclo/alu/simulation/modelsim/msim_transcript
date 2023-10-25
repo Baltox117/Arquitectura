@@ -1,0 +1,73 @@
+# Reading pref.tcl
+# do alu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu/sumador {C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu/sumador/fulladder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:42 on Sep 29,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu/sumador" C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu/sumador/fulladder.v 
+# -- Compiling module fulladder
+# 
+# Top level modules:
+# 	fulladder
+# End time: 15:34:43 on Sep 29,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu {C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu/alu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:43 on Sep 29,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu" C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu/alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 15:34:43 on Sep 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu {C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu/aluN.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:43 on Sep 29,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu" C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu/aluN.v 
+# -- Compiling module aluN
+# 
+# Top level modules:
+# 	aluN
+# End time: 15:34:43 on Sep 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu {C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu/disp7segs.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:44 on Sep 29,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu" C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu/disp7segs.v 
+# -- Compiling module disp7segs
+# 
+# Top level modules:
+# 	disp7segs
+# End time: 15:34:44 on Sep 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu {C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu/rom.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:44 on Sep 29,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu" C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu/rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 15:34:44 on Sep 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu {C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu/alu_fpga.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:44 on Sep 29,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu" C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/practica1/alu/alu/alu_fpga.v 
+# -- Compiling module alu_fpga
+# 
+# Top level modules:
+# 	alu_fpga
+# End time: 15:34:44 on Sep 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
