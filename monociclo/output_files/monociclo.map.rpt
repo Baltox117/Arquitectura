@@ -1,5 +1,5 @@
 Analysis & Synthesis report for monociclo
-Mon Oct 23 21:28:24 2023
+Mon Oct 30 21:03:48 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,49 +10,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: aluN:execute_u0
- 12. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[31].alu_N"
- 13. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[30].alu_N"
- 14. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[29].alu_N"
- 15. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[28].alu_N"
- 16. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[27].alu_N"
- 17. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[26].alu_N"
- 18. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[25].alu_N"
- 19. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[24].alu_N"
- 20. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[23].alu_N"
- 21. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[22].alu_N"
- 22. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[21].alu_N"
- 23. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[20].alu_N"
- 24. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[19].alu_N"
- 25. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[18].alu_N"
- 26. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[17].alu_N"
- 27. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[16].alu_N"
- 28. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[15].alu_N"
- 29. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[14].alu_N"
- 30. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[13].alu_N"
- 31. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[12].alu_N"
- 32. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[11].alu_N"
- 33. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[10].alu_N"
- 34. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[9].alu_N"
- 35. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[8].alu_N"
- 36. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[7].alu_N"
- 37. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[6].alu_N"
- 38. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[5].alu_N"
- 39. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[4].alu_N"
- 40. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[3].alu_N"
- 41. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[2].alu_N"
- 42. Port Connectivity Checks: "aluN:execute_u0|alu:alutag[1].alu_N"
- 43. Port Connectivity Checks: "aluN:execute_u0"
- 44. Port Connectivity Checks: "ichache:icache_u0"
- 45. Post-Synthesis Netlist Statistics for Top Partition
- 46. Elapsed Time Per Partition
- 47. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -79,20 +37,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 23 21:28:23 2023       ;
+; Analysis & Synthesis Status        ; Failed - Mon Oct 30 21:03:48 2023           ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; monociclo                                   ;
 ; Top-level Entity Name              ; monociclo                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2,587                                       ;
-;     Total combinational functions  ; 1,595                                       ;
-;     Dedicated logic registers      ; 1,032                                       ;
-; Total registers                    ; 1032                                        ;
-; Total pins                         ; 34                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -191,508 +149,11 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.1%      ;
-;     Processor 4            ;   0.1%      ;
 +----------------------------+-------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                 ;
-+----------------------------------+-----------------+---------------------------------------------+-------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                   ; File Name with Absolute Path                                                              ; Library ;
-+----------------------------------+-----------------+---------------------------------------------+-------------------------------------------------------------------------------------------+---------+
-; alu/sumador/fulladder.v          ; yes             ; User Verilog HDL File                       ; C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/alu/sumador/fulladder.v         ;         ;
-; alu/aluN.v                       ; yes             ; User Verilog HDL File                       ; C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/alu/aluN.v                      ;         ;
-; alu/alu.v                        ; yes             ; User Verilog HDL File                       ; C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/alu/alu.v                       ;         ;
-; monociclo.v                      ; yes             ; User Verilog HDL File                       ; C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v                     ;         ;
-; icache/icache.v                  ; yes             ; User Verilog HDL File                       ; C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/icache/icache.v                 ;         ;
-; decode/decode.v                  ; yes             ; User Verilog HDL File                       ; C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/decode/decode.v                 ;         ;
-; regfile/registerfile.v           ; yes             ; User Verilog HDL File                       ; C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/regfile/registerfile.v          ;         ;
-; icache/bubblesort_inst_5cv1.hex  ; yes             ; Auto-Found Hexadecimal (Intel-Format) File  ; C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/icache/bubblesort_inst_5cv1.hex ;         ;
-+----------------------------------+-----------------+---------------------------------------------+-------------------------------------------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 2,587       ;
-;                                             ;             ;
-; Total combinational functions               ; 1595        ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 1449        ;
-;     -- 3 input functions                    ; 106         ;
-;     -- <=2 input functions                  ; 40          ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 1589        ;
-;     -- arithmetic mode                      ; 6           ;
-;                                             ;             ;
-; Total registers                             ; 1032        ;
-;     -- Dedicated logic registers            ; 1032        ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 34          ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; clk_i~input ;
-; Maximum fan-out                             ; 1032        ;
-; Total fan-out                               ; 9354        ;
-; Average fan-out                             ; 3.47        ;
-+---------------------------------------------+-------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                  ;
-+------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+--------------+--------------+
-; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                          ; Entity Name  ; Library Name ;
-+------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+--------------+--------------+
-; |monociclo                   ; 1595 (8)            ; 1032 (8)                  ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |monociclo                                                   ; monociclo    ; work         ;
-;    |aluN:execute_u0|         ; 140 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0                                   ; aluN         ; work         ;
-;       |alu:alutag[0].alu_N|  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[0].alu_N               ; alu          ; work         ;
-;       |alu:alutag[10].alu_N| ; 7 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[10].alu_N              ; alu          ; work         ;
-;          |fulladder:fa|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[10].alu_N|fulladder:fa ; fulladder    ; work         ;
-;       |alu:alutag[11].alu_N| ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[11].alu_N              ; alu          ; work         ;
-;          |fulladder:fa|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[11].alu_N|fulladder:fa ; fulladder    ; work         ;
-;       |alu:alutag[12].alu_N| ; 4 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[12].alu_N              ; alu          ; work         ;
-;          |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[12].alu_N|fulladder:fa ; fulladder    ; work         ;
-;       |alu:alutag[13].alu_N| ; 4 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[13].alu_N              ; alu          ; work         ;
-;          |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[13].alu_N|fulladder:fa ; fulladder    ; work         ;
-;       |alu:alutag[14].alu_N| ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[14].alu_N              ; alu          ; work         ;
-;       |alu:alutag[15].alu_N| ; 7 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[15].alu_N              ; alu          ; work         ;
-;          |fulladder:fa|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[15].alu_N|fulladder:fa ; fulladder    ; work         ;
-;       |alu:alutag[16].alu_N| ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[16].alu_N              ; alu          ; work         ;
-;          |fulladder:fa|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[16].alu_N|fulladder:fa ; fulladder    ; work         ;
-;       |alu:alutag[17].alu_N| ; 4 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[17].alu_N              ; alu          ; work         ;
-;          |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[17].alu_N|fulladder:fa ; fulladder    ; work         ;
-;       |alu:alutag[18].alu_N| ; 4 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[18].alu_N              ; alu          ; work         ;
-;          |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[18].alu_N|fulladder:fa ; fulladder    ; work         ;
-;       |alu:alutag[19].alu_N| ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[19].alu_N              ; alu          ; work         ;
-;       |alu:alutag[1].alu_N|  ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[1].alu_N               ; alu          ; work         ;
-;          |fulladder:fa|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[1].alu_N|fulladder:fa  ; fulladder    ; work         ;
-;       |alu:alutag[20].alu_N| ; 7 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[20].alu_N              ; alu          ; work         ;
-;          |fulladder:fa|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[20].alu_N|fulladder:fa ; fulladder    ; work         ;
-;       |alu:alutag[21].alu_N| ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[21].alu_N              ; alu          ; work         ;
-;          |fulladder:fa|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[21].alu_N|fulladder:fa ; fulladder    ; work         ;
-;       |alu:alutag[22].alu_N| ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[22].alu_N              ; alu          ; work         ;
-;       |alu:alutag[23].alu_N| ; 7 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[23].alu_N              ; alu          ; work         ;
-;          |fulladder:fa|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[23].alu_N|fulladder:fa ; fulladder    ; work         ;
-;       |alu:alutag[24].alu_N| ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[24].alu_N              ; alu          ; work         ;
-;          |fulladder:fa|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[24].alu_N|fulladder:fa ; fulladder    ; work         ;
-;       |alu:alutag[25].alu_N| ; 4 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[25].alu_N              ; alu          ; work         ;
-;          |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[25].alu_N|fulladder:fa ; fulladder    ; work         ;
-;       |alu:alutag[26].alu_N| ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[26].alu_N              ; alu          ; work         ;
-;       |alu:alutag[27].alu_N| ; 7 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[27].alu_N              ; alu          ; work         ;
-;          |fulladder:fa|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[27].alu_N|fulladder:fa ; fulladder    ; work         ;
-;       |alu:alutag[28].alu_N| ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[28].alu_N              ; alu          ; work         ;
-;          |fulladder:fa|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[28].alu_N|fulladder:fa ; fulladder    ; work         ;
-;       |alu:alutag[29].alu_N| ; 4 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[29].alu_N              ; alu          ; work         ;
-;          |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[29].alu_N|fulladder:fa ; fulladder    ; work         ;
-;       |alu:alutag[2].alu_N|  ; 4 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[2].alu_N               ; alu          ; work         ;
-;          |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[2].alu_N|fulladder:fa  ; fulladder    ; work         ;
-;       |alu:alutag[30].alu_N| ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[30].alu_N              ; alu          ; work         ;
-;       |alu:alutag[31].alu_N| ; 5 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[31].alu_N              ; alu          ; work         ;
-;          |fulladder:fa|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[31].alu_N|fulladder:fa ; fulladder    ; work         ;
-;       |alu:alutag[3].alu_N|  ; 4 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[3].alu_N               ; alu          ; work         ;
-;          |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[3].alu_N|fulladder:fa  ; fulladder    ; work         ;
-;       |alu:alutag[4].alu_N|  ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[4].alu_N               ; alu          ; work         ;
-;       |alu:alutag[5].alu_N|  ; 7 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[5].alu_N               ; alu          ; work         ;
-;          |fulladder:fa|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[5].alu_N|fulladder:fa  ; fulladder    ; work         ;
-;       |alu:alutag[6].alu_N|  ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[6].alu_N               ; alu          ; work         ;
-;          |fulladder:fa|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[6].alu_N|fulladder:fa  ; fulladder    ; work         ;
-;       |alu:alutag[7].alu_N|  ; 4 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[7].alu_N               ; alu          ; work         ;
-;          |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[7].alu_N|fulladder:fa  ; fulladder    ; work         ;
-;       |alu:alutag[8].alu_N|  ; 4 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[8].alu_N               ; alu          ; work         ;
-;          |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[8].alu_N|fulladder:fa  ; fulladder    ; work         ;
-;       |alu:alutag[9].alu_N|  ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|aluN:execute_u0|alu:alutag[9].alu_N               ; alu          ; work         ;
-;    |decode:decode_u0|        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|decode:decode_u0                                  ; decode       ; work         ;
-;    |ichache:icache_u0|       ; 50 (50)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|ichache:icache_u0                                 ; ichache      ; work         ;
-;    |registerfile:refile|     ; 1396 (1396)         ; 1024 (1024)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo|registerfile:refile                               ; registerfile ; work         ;
-+------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+--------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-------------------------------------------------------------+
-; Registers Removed During Synthesis                          ;
-+----------------------------------------+--------------------+
-; Register name                          ; Reason for Removal ;
-+----------------------------------------+--------------------+
-; pc_w[10..31]                           ; Lost fanout        ;
-; Total Number of Removed Registers = 22 ;                    ;
-+----------------------------------------+--------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 1032  ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 8     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1024  ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; 8:1                ; 31 bits   ; 155 LEs       ; 93 LEs               ; 62 LEs                 ; No         ; |monociclo|aluN:execute_u0|alu:alutag[1].alu_N|Mux0 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: aluN:execute_u0 ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; N              ; 32    ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[31].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[30].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[29].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[28].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[27].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[26].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[25].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[24].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[23].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[22].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[21].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[20].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[19].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[18].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[17].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[16].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[15].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[14].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[13].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[12].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[11].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[10].alu_N" ;
-+-------+-------+----------+---------------------------------------+
-; Port  ; Type  ; Severity ; Details                               ;
-+-------+-------+----------+---------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                          ;
-+-------+-------+----------+---------------------------------------+
-
-
-+-----------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[9].alu_N" ;
-+-------+-------+----------+--------------------------------------+
-; Port  ; Type  ; Severity ; Details                              ;
-+-------+-------+----------+--------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                         ;
-+-------+-------+----------+--------------------------------------+
-
-
-+-----------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[8].alu_N" ;
-+-------+-------+----------+--------------------------------------+
-; Port  ; Type  ; Severity ; Details                              ;
-+-------+-------+----------+--------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                         ;
-+-------+-------+----------+--------------------------------------+
-
-
-+-----------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[7].alu_N" ;
-+-------+-------+----------+--------------------------------------+
-; Port  ; Type  ; Severity ; Details                              ;
-+-------+-------+----------+--------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                         ;
-+-------+-------+----------+--------------------------------------+
-
-
-+-----------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[6].alu_N" ;
-+-------+-------+----------+--------------------------------------+
-; Port  ; Type  ; Severity ; Details                              ;
-+-------+-------+----------+--------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                         ;
-+-------+-------+----------+--------------------------------------+
-
-
-+-----------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[5].alu_N" ;
-+-------+-------+----------+--------------------------------------+
-; Port  ; Type  ; Severity ; Details                              ;
-+-------+-------+----------+--------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                         ;
-+-------+-------+----------+--------------------------------------+
-
-
-+-----------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[4].alu_N" ;
-+-------+-------+----------+--------------------------------------+
-; Port  ; Type  ; Severity ; Details                              ;
-+-------+-------+----------+--------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                         ;
-+-------+-------+----------+--------------------------------------+
-
-
-+-----------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[3].alu_N" ;
-+-------+-------+----------+--------------------------------------+
-; Port  ; Type  ; Severity ; Details                              ;
-+-------+-------+----------+--------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                         ;
-+-------+-------+----------+--------------------------------------+
-
-
-+-----------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[2].alu_N" ;
-+-------+-------+----------+--------------------------------------+
-; Port  ; Type  ; Severity ; Details                              ;
-+-------+-------+----------+--------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                         ;
-+-------+-------+----------+--------------------------------------+
-
-
-+-----------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0|alu:alutag[1].alu_N" ;
-+-------+-------+----------+--------------------------------------+
-; Port  ; Type  ; Severity ; Details                              ;
-+-------+-------+----------+--------------------------------------+
-; set_i ; Input ; Info     ; Stuck at GND                         ;
-+-------+-------+----------+--------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "aluN:execute_u0"                                                                    ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; c_i  ; Input  ; Info     ; Stuck at GND                                                                        ;
-; c_o  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ichache:icache_u0"                                                                            ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port           ; Type   ; Severity ; Details                                                                             ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; inst_o[29..25] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; inst_o[31]     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 34                          ;
-; cycloneiii_ff         ; 1032                        ;
-;     CLR               ; 8                           ;
-;     ENA               ; 1024                        ;
-; cycloneiii_lcell_comb ; 1595                        ;
-;     arith             ; 6                           ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 1                           ;
-;     normal            ; 1589                        ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 33                          ;
-;         3 data inputs ; 105                         ;
-;         4 data inputs ; 1449                        ;
-;                       ;                             ;
-; Max LUT depth         ; 34.00                       ;
-; Average LUT depth     ; 19.77                       ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:04     ;
-+----------------+--------------+
 
 
 +-------------------------------+
@@ -701,7 +162,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Oct 23 21:28:07 2023
+    Info: Processing started: Mon Oct 30 21:03:37 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off monociclo -c monociclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -719,34 +180,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file decode/
     Info (12023): Found entity 1: decode File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/decode/decode.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file regfile/registerfile.v
     Info (12023): Found entity 1: registerfile File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/regfile/registerfile.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at monociclo.v(78): created implicit net for "c_o" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 78
-Info (12127): Elaborating entity "monociclo" for the top level hierarchy
-Info (12128): Elaborating entity "ichache" for hierarchy "ichache:icache_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 43
-Warning (10850): Verilog HDL warning at icache.v(12): number of words (30) in memory file does not match the number of elements in the address range [0:255] File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/icache/icache.v Line: 12
-Warning (10030): Net "memory.data_a" at icache.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/icache/icache.v Line: 8
-Warning (10030): Net "memory.waddr_a" at icache.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/icache/icache.v Line: 8
-Warning (10030): Net "memory.we_a" at icache.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/icache/icache.v Line: 8
-Info (12128): Elaborating entity "decode" for hierarchy "decode:decode_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 50
-Info (12128): Elaborating entity "registerfile" for hierarchy "registerfile:refile" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 67
-Info (12128): Elaborating entity "aluN" for hierarchy "aluN:execute_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 80
-Info (12128): Elaborating entity "alu" for hierarchy "aluN:execute_u0|alu:alutag[0].alu_N" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/alu/aluN.v Line: 31
-Info (12128): Elaborating entity "fulladder" for hierarchy "aluN:execute_u0|alu:alutag[0].alu_N|fulladder:fa" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/alu/alu.v Line: 47
-Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "registerfile:refile|regfile" is uninferred due to asynchronous read logic File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/regfile/registerfile.v Line: 15
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/db/monociclo.ram0_ichache_f5c6e3f2.hdl.mif" contains "don't care" values -- overwriting them with 0s
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/db/monociclo.ram0_registerfile_e17e90b4.hdl.mif" contains "don't care" values -- overwriting them with 0s
-Info (286030): Timing-Driven Synthesis is running
-Info (17049): 22 registers lost all their fanouts during netlist optimizations.
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2653 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 2619 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4778 megabytes
-    Info: Processing ended: Mon Oct 23 21:28:24 2023
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:22
+Info (12021): Found 1 design units, including 1 entities, in source file dcache/dcache.v
+    Info (12023): Found entity 1: dchache File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/dcache/dcache.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at monociclo.v(85): created implicit net for "c_o" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 85
+Error (10161): Verilog HDL error at dcache.v(21): object "datacache" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/dcache/dcache.v Line: 21
+Error (10161): Verilog HDL error at dcache.v(24): object "datacache" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/dcache/dcache.v Line: 24
+Error (10161): Verilog HDL error at monociclo.v(106): object "id_memtoreg" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 106
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 2 warnings
+    Error: Peak virtual memory: 4704 megabytes
+    Error: Processing ended: Mon Oct 30 21:03:48 2023
+    Error: Elapsed time: 00:00:11
+    Error: Total CPU time (on all processors): 00:00:19
 
 

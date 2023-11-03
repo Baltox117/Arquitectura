@@ -13,10 +13,14 @@ module monociclo(
 	wire		[31:0]	pcnext_w;
 	wire		[31:0]	if_inst_o;
 	wire					id_regwrite_o;
+	wire					id_memread_o;
+	wire					id_memwrite_o;
+	wire					id_memtoreg_o;
 	wire		[31:0]	wb_dato_o;
 	wire		[31:0]	rr_dators1_o;
 	wire		[31:0]	rr_dators2_o;
 	wire		[31:0]	ex_dato_o;
+	wire		[31:0]	mem_dato_o;
 	
 	//---------------------------------------------
 	// FETCH STAGE - IF
@@ -45,7 +49,10 @@ module monociclo(
 	decode decode_u0(
 
 	.opcode_i		(if_inst_o[6:0]), //codigo de operacion de nuestra instruccion
-	.regwrite_o		(id_regwrite_o)
+	.regwrite_o		(id_regwrite_o),
+	.memread_o		(id_memread_o),
+	.memwrite_o		(id_memwrite_o),
+	.memtoreg_o		(id_memtoreg_o)
 
 	);
 	
@@ -80,9 +87,22 @@ module monociclo(
 	);
 	
 	//
+	// MEMORY ACCESS STAGE - MEM
+	//
+	dchache dcache_u0(
+	
+	.clk_i		(clk_i),
+	.writeen_i	(id_memwrite_o),
+	.readen_i	(id_memread_o),
+	.addr_i		(ex_dato_o[11:2]),
+	.dato_i		(rr_dators2_o),
+	.dato_o		(mem_dato_o)
+	);
+	
+	//
 	// WRITE BACK - WB
 	//
 	
-	assign wb_dato_o = ex_dato_o;
+	assign wb_dato_o = (id_memtoreg) ? mem_dato_o : ex_dato_o;
 
 endmodule 
