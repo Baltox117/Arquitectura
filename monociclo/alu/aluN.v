@@ -6,8 +6,11 @@ module aluN #(
 	input			[N-1:0]	B_i,
 	input						c_i,
 	input			[3:0]		ope_i,
+	input						branch_i,
+//	input			[2:0]		brctrl_i,
 	output					c_o,
-	output		[N-1:0]	sal_o
+	output		[N-1:0]	sal_o,
+	output					brflag_o
 );
 
 	wire			[N:0]		carryint_w;
@@ -45,5 +48,14 @@ module aluN #(
 	
 	assign	c_o = carryint_w[N];
 	//assign	set_w =	()
+	
+	flagdetector flagdetector_u0(
+	
+	.branch_i		(branch_i),
+	.brctrl_i		(op),
+	.resultado_i	(sal_o),
+	.brflag_o		(brflag_o)
+
+);
 	
 endmodule 

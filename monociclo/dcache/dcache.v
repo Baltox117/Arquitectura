@@ -12,7 +12,7 @@ module dchache(
 
 );
 
-	reg		[31:0]	datacahe	[2**10-1:0];
+	reg		[31:0]	datacache	[2**10-1:0];
 
 	
 	always @(posedge clk_i)
