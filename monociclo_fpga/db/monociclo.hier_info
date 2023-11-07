@@ -1,6 +1,6 @@
 |monociclo_fpga
 clk_i => clk_i.IN1
-rst_ni => rst_ni.IN1
+rst_ni => rst_ni.IN2
 disp0[0] << disp7segs:disp_0.salida_o
 disp0[1] << disp7segs:disp_0.salida_o
 disp0[2] << disp7segs:disp_0.salida_o
@@ -59,7 +59,77 @@ disp7[5] << disp7segs:disp_7.salida_o
 disp7[6] << disp7segs:disp_7.salida_o
 
 
-|monociclo_fpga|monociclo:monocilo_u0
+|monociclo_fpga|divisor50mhz:div50_u0
+clk_i => clk1hz_o~reg0.CLK
+clk_i => ctr_w[0].CLK
+clk_i => ctr_w[1].CLK
+clk_i => ctr_w[2].CLK
+clk_i => ctr_w[3].CLK
+clk_i => ctr_w[4].CLK
+clk_i => ctr_w[5].CLK
+clk_i => ctr_w[6].CLK
+clk_i => ctr_w[7].CLK
+clk_i => ctr_w[8].CLK
+clk_i => ctr_w[9].CLK
+clk_i => ctr_w[10].CLK
+clk_i => ctr_w[11].CLK
+clk_i => ctr_w[12].CLK
+clk_i => ctr_w[13].CLK
+clk_i => ctr_w[14].CLK
+clk_i => ctr_w[15].CLK
+clk_i => ctr_w[16].CLK
+clk_i => ctr_w[17].CLK
+clk_i => ctr_w[18].CLK
+clk_i => ctr_w[19].CLK
+clk_i => ctr_w[20].CLK
+clk_i => ctr_w[21].CLK
+clk_i => ctr_w[22].CLK
+clk_i => ctr_w[23].CLK
+clk_i => ctr_w[24].CLK
+clk_i => ctr_w[25].CLK
+clk_i => ctr_w[26].CLK
+clk_i => ctr_w[27].CLK
+clk_i => ctr_w[28].CLK
+clk_i => ctr_w[29].CLK
+clk_i => ctr_w[30].CLK
+clk_i => ctr_w[31].CLK
+rst_ni => clk1hz_o~reg0.PRESET
+rst_ni => ctr_w[0].ACLR
+rst_ni => ctr_w[1].ACLR
+rst_ni => ctr_w[2].ACLR
+rst_ni => ctr_w[3].ACLR
+rst_ni => ctr_w[4].ACLR
+rst_ni => ctr_w[5].ACLR
+rst_ni => ctr_w[6].ACLR
+rst_ni => ctr_w[7].ACLR
+rst_ni => ctr_w[8].ACLR
+rst_ni => ctr_w[9].ACLR
+rst_ni => ctr_w[10].ACLR
+rst_ni => ctr_w[11].ACLR
+rst_ni => ctr_w[12].ACLR
+rst_ni => ctr_w[13].ACLR
+rst_ni => ctr_w[14].ACLR
+rst_ni => ctr_w[15].ACLR
+rst_ni => ctr_w[16].ACLR
+rst_ni => ctr_w[17].ACLR
+rst_ni => ctr_w[18].ACLR
+rst_ni => ctr_w[19].ACLR
+rst_ni => ctr_w[20].ACLR
+rst_ni => ctr_w[21].ACLR
+rst_ni => ctr_w[22].ACLR
+rst_ni => ctr_w[23].ACLR
+rst_ni => ctr_w[24].ACLR
+rst_ni => ctr_w[25].ACLR
+rst_ni => ctr_w[26].ACLR
+rst_ni => ctr_w[27].ACLR
+rst_ni => ctr_w[28].ACLR
+rst_ni => ctr_w[29].ACLR
+rst_ni => ctr_w[30].ACLR
+rst_ni => ctr_w[31].ACLR
+clk1hz_o <= clk1hz_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|monociclo_fpga|monociclo:DUT
 clk_i => pc_w[2].CLK
 clk_i => pc_w[3].CLK
 clk_i => pc_w[4].CLK
@@ -154,7 +224,7 @@ monitor_o[30] <= ichache:icache_u0.inst_o
 monitor_o[31] <= ichache:icache_u0.inst_o
 
 
-|monociclo_fpga|monociclo:monocilo_u0|ichache:icache_u0
+|monociclo_fpga|monociclo:DUT|ichache:icache_u0
 addrrd_i[0] => memory.RADDR
 addrrd_i[1] => memory.RADDR1
 addrrd_i[2] => memory.RADDR2

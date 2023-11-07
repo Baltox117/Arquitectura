@@ -1,7 +1,7 @@
 module monociclo_fpga(
 
-	input					clk_i,
-	input					rst_ni,
+	input					clk_i, //señal de reloj
+	input					rst_ni,//señal de reset
 	output		[6:0] disp0, // display de 7 segmentos numero 0
 	output		[6:0] disp1, // display de 7 segmentos numero 1
 	output		[6:0] disp2, // display de 7 segmentos numero 2
@@ -14,10 +14,21 @@ module monociclo_fpga(
 );
 
 	wire 			[31:0] monitor_o;	
+	wire					 clk1hz_W; //salida de la señal de reloj
 	
-	monociclo monocilo_u0(
+	//instacia del divisor de frecuencia
+	divisor50mhz div50_u0(
+
+		.clk_i		(clk_i),
+		.rst_ni		(rst_ni),
+		.clk1hz_o	(clk1hz_W)	
 	
-		.clk_i			(clk_i),
+	);
+	
+	//instancia del monociclo
+	monociclo DUT(
+	
+		.clk_i			(clk1hz_W),
 		.rst_ni			(rst_ni),
 		.monitor_o		(monitor_o)
 

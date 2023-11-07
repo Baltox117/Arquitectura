@@ -1,5 +1,5 @@
 Analysis & Synthesis report for monociclo
-Thu Oct 19 00:47:16 2023
+Thu Oct 19 20:55:07 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -15,9 +15,10 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
   9. General Register Statistics
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+ 10. Inverted Register Statistics
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -44,15 +45,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 19 00:47:16 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct 19 20:55:07 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; monociclo                                   ;
 ; Top-level Entity Name              ; monociclo_fpga                              ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 131                                         ;
-;     Total combinational functions  ; 131                                         ;
-;     Dedicated logic registers      ; 8                                           ;
-; Total registers                    ; 8                                           ;
+; Total logic elements               ; 187                                         ;
+;     Total combinational functions  ; 187                                         ;
+;     Dedicated logic registers      ; 41                                          ;
+; Total registers                    ; 41                                          ;
 ; Total pins                         ; 58                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -152,79 +153,82 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                ;
-+----------------------------------+-----------------+---------------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                   ; File Name with Absolute Path                                                                             ; Library ;
-+----------------------------------+-----------------+---------------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
-; fpga/disp7segs.v                 ; yes             ; User Verilog HDL File                       ; C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/fpga/disp7segs.v                ;         ;
-; monociclo.v                      ; yes             ; User Verilog HDL File                       ; C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/monociclo.v                     ;         ;
-; icache/icache.v                  ; yes             ; User Verilog HDL File                       ; C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/icache/icache.v                 ;         ;
-; monociclo_fpga.v                 ; yes             ; User Verilog HDL File                       ; C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/monociclo_fpga.v                ;         ;
-; icache/bubblesort_inst_5cv1.hex  ; yes             ; Auto-Found Hexadecimal (Intel-Format) File  ; C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/icache/bubblesort_inst_5cv1.hex ;         ;
-+----------------------------------+-----------------+---------------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                      ;
++----------------------------------+-----------------+---------------------------------------------+------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                   ; File Name with Absolute Path                                                                   ; Library ;
++----------------------------------+-----------------+---------------------------------------------+------------------------------------------------------------------------------------------------+---------+
+; fpga/disp7segs.v                 ; yes             ; User Verilog HDL File                       ; C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/fpga/disp7segs.v                ;         ;
+; monociclo.v                      ; yes             ; User Verilog HDL File                       ; C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo.v                     ;         ;
+; icache/icache.v                  ; yes             ; User Verilog HDL File                       ; C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/icache/icache.v                 ;         ;
+; monociclo_fpga.v                 ; yes             ; User Verilog HDL File                       ; C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo_fpga.v                ;         ;
+; fpga/divisor50mhz.v              ; yes             ; User Verilog HDL File                       ; C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/fpga/divisor50mhz.v             ;         ;
+; icache/bubblesort_inst_5cv1.hex  ; yes             ; Auto-Found Hexadecimal (Intel-Format) File  ; C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/icache/bubblesort_inst_5cv1.hex ;         ;
++----------------------------------+-----------------+---------------------------------------------+------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                 ;
-+---------------------------------------------+-------------------------------+
-; Resource                                    ; Usage                         ;
-+---------------------------------------------+-------------------------------+
-; Estimated Total logic elements              ; 131                           ;
-;                                             ;                               ;
-; Total combinational functions               ; 131                           ;
-; Logic element usage by number of LUT inputs ;                               ;
-;     -- 4 input functions                    ; 94                            ;
-;     -- 3 input functions                    ; 19                            ;
-;     -- <=2 input functions                  ; 18                            ;
-;                                             ;                               ;
-; Logic elements by mode                      ;                               ;
-;     -- normal mode                          ; 125                           ;
-;     -- arithmetic mode                      ; 6                             ;
-;                                             ;                               ;
-; Total registers                             ; 8                             ;
-;     -- Dedicated logic registers            ; 8                             ;
-;     -- I/O registers                        ; 0                             ;
-;                                             ;                               ;
-; I/O pins                                    ; 58                            ;
-;                                             ;                               ;
-; Embedded Multiplier 9-bit elements          ; 0                             ;
-;                                             ;                               ;
-; Maximum fan-out node                        ; monociclo:monocilo_u0|pc_w[6] ;
-; Maximum fan-out                             ; 42                            ;
-; Total fan-out                               ; 601                           ;
-; Average fan-out                             ; 2.36                          ;
-+---------------------------------------------+-------------------------------+
++---------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                         ;
++---------------------------------------------+-----------------------+
+; Resource                                    ; Usage                 ;
++---------------------------------------------+-----------------------+
+; Estimated Total logic elements              ; 187                   ;
+;                                             ;                       ;
+; Total combinational functions               ; 187                   ;
+; Logic element usage by number of LUT inputs ;                       ;
+;     -- 4 input functions                    ; 104                   ;
+;     -- 3 input functions                    ; 33                    ;
+;     -- <=2 input functions                  ; 50                    ;
+;                                             ;                       ;
+; Logic elements by mode                      ;                       ;
+;     -- normal mode                          ; 150                   ;
+;     -- arithmetic mode                      ; 37                    ;
+;                                             ;                       ;
+; Total registers                             ; 41                    ;
+;     -- Dedicated logic registers            ; 41                    ;
+;     -- I/O registers                        ; 0                     ;
+;                                             ;                       ;
+; I/O pins                                    ; 58                    ;
+;                                             ;                       ;
+; Embedded Multiplier 9-bit elements          ; 0                     ;
+;                                             ;                       ;
+; Maximum fan-out node                        ; monociclo:DUT|pc_w[6] ;
+; Maximum fan-out                             ; 41                    ;
+; Total fan-out                               ; 845                   ;
+; Average fan-out                             ; 2.46                  ;
++---------------------------------------------+-----------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                             ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                     ; Entity Name    ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+----------------+--------------+
-; |monociclo_fpga            ; 131 (0)             ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 58   ; 0            ; |monociclo_fpga                                         ; monociclo_fpga ; work         ;
-;    |disp7segs:disp_0|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_0                        ; disp7segs      ; work         ;
-;    |disp7segs:disp_1|      ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_1                        ; disp7segs      ; work         ;
-;    |disp7segs:disp_2|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_2                        ; disp7segs      ; work         ;
-;    |disp7segs:disp_3|      ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_3                        ; disp7segs      ; work         ;
-;    |disp7segs:disp_4|      ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_4                        ; disp7segs      ; work         ;
-;    |disp7segs:disp_5|      ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_5                        ; disp7segs      ; work         ;
-;    |disp7segs:disp_6|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_6                        ; disp7segs      ; work         ;
-;    |monociclo:monocilo_u0| ; 75 (8)              ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:monocilo_u0                   ; monociclo      ; work         ;
-;       |ichache:icache_u0|  ; 67 (67)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:monocilo_u0|ichache:icache_u0 ; ichache        ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+----------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                     ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Entity Name    ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+----------------+--------------+
+; |monociclo_fpga            ; 187 (0)             ; 41 (0)                    ; 0           ; 0            ; 0       ; 0         ; 58   ; 0            ; |monociclo_fpga                                 ; monociclo_fpga ; work         ;
+;    |disp7segs:disp_0|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_0                ; disp7segs      ; work         ;
+;    |disp7segs:disp_1|      ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_1                ; disp7segs      ; work         ;
+;    |disp7segs:disp_2|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_2                ; disp7segs      ; work         ;
+;    |disp7segs:disp_3|      ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_3                ; disp7segs      ; work         ;
+;    |disp7segs:disp_4|      ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_4                ; disp7segs      ; work         ;
+;    |disp7segs:disp_5|      ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_5                ; disp7segs      ; work         ;
+;    |disp7segs:disp_6|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_6                ; disp7segs      ; work         ;
+;    |divisor50mhz:div50_u0| ; 56 (56)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|divisor50mhz:div50_u0           ; divisor50mhz   ; work         ;
+;    |monociclo:DUT|         ; 75 (8)              ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT                   ; monociclo      ; work         ;
+;       |ichache:icache_u0|  ; 67 (67)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|ichache:icache_u0 ; ichache        ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -233,7 +237,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+--------------------+
 ; Register name                          ; Reason for Removal ;
 +----------------------------------------+--------------------+
-; monociclo:monocilo_u0|pc_w[10..31]     ; Lost fanout        ;
+; monociclo:DUT|pc_w[10..31]             ; Lost fanout        ;
 ; Total Number of Removed Registers = 22 ;                    ;
 +----------------------------------------+--------------------+
 
@@ -243,14 +247,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 8     ;
+; Total registers                              ; 41    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Asynchronous Clear ; 41    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; divisor50mhz:div50_u0|clk1hz_o         ; 9       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -259,21 +273,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 58                          ;
-; cycloneiii_ff         ; 8                           ;
-;     CLR               ; 8                           ;
-; cycloneiii_lcell_comb ; 140                         ;
-;     arith             ; 6                           ;
-;         2 data inputs ; 5                           ;
+; cycloneiii_ff         ; 41                          ;
+;     CLR               ; 41                          ;
+; cycloneiii_lcell_comb ; 196                         ;
+;     arith             ; 37                          ;
+;         2 data inputs ; 36                          ;
 ;         3 data inputs ; 1                           ;
-;     normal            ; 134                         ;
+;     normal            ; 159                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 10                          ;
+;         1 data inputs ; 11                          ;
 ;         2 data inputs ; 11                          ;
-;         3 data inputs ; 18                          ;
-;         4 data inputs ; 94                          ;
+;         3 data inputs ; 32                          ;
+;         4 data inputs ; 104                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.32                        ;
+; Average LUT depth     ; 3.35                        ;
 +-----------------------+-----------------------------+
 
 
@@ -292,46 +306,51 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Oct 19 00:47:00 2023
+    Info: Processing started: Thu Oct 19 20:54:54 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off monociclo -c monociclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file fpga/disp7segs.v
-    Info (12023): Found entity 1: disp7segs File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/fpga/disp7segs.v Line: 1
+    Info (12023): Found entity 1: disp7segs File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/fpga/disp7segs.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fpga/alu_fpga.v
-    Info (12023): Found entity 1: alu_fpga File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/fpga/alu_fpga.v Line: 1
+    Info (12023): Found entity 1: alu_fpga File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/fpga/alu_fpga.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file monociclo.v
-    Info (12023): Found entity 1: monociclo File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/monociclo.v Line: 1
+    Info (12023): Found entity 1: monociclo File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file icache/icache.v
-    Info (12023): Found entity 1: ichache File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/icache/icache.v Line: 1
+    Info (12023): Found entity 1: ichache File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/icache/icache.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file monociclo_fpga.v
-    Info (12023): Found entity 1: monociclo_fpga File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/monociclo_fpga.v Line: 1
+    Info (12023): Found entity 1: monociclo_fpga File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo_fpga.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fpga/divisor50mhz.v
+    Info (12023): Found entity 1: divisor50mhz File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/fpga/divisor50mhz.v Line: 1
 Info (12127): Elaborating entity "monociclo_fpga" for the top level hierarchy
-Info (12128): Elaborating entity "monociclo" for hierarchy "monociclo:monocilo_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/monociclo_fpga.v Line: 24
-Info (12128): Elaborating entity "ichache" for hierarchy "monociclo:monocilo_u0|ichache:icache_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/monociclo.v Line: 35
-Warning (10850): Verilog HDL warning at icache.v(12): number of words (30) in memory file does not match the number of elements in the address range [0:255] File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/icache/icache.v Line: 12
-Warning (10030): Net "memory.data_a" at icache.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/icache/icache.v Line: 8
-Warning (10030): Net "memory.waddr_a" at icache.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/icache/icache.v Line: 8
-Warning (10030): Net "memory.we_a" at icache.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/icache/icache.v Line: 8
-Info (12128): Elaborating entity "disp7segs" for hierarchy "disp7segs:disp_0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/monociclo_fpga.v Line: 33
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/db/monociclo.ram0_ichache_f5c6e3f2.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Info (12128): Elaborating entity "divisor50mhz" for hierarchy "divisor50mhz:div50_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo_fpga.v Line: 25
+Info (12128): Elaborating entity "monociclo" for hierarchy "monociclo:DUT" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo_fpga.v Line: 34
+Info (12128): Elaborating entity "ichache" for hierarchy "monociclo:DUT|ichache:icache_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo.v Line: 35
+Warning (10850): Verilog HDL warning at icache.v(12): number of words (30) in memory file does not match the number of elements in the address range [0:255] File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/icache/icache.v Line: 12
+Warning (10030): Net "memory.data_a" at icache.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/icache/icache.v Line: 8
+Warning (10030): Net "memory.waddr_a" at icache.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/icache/icache.v Line: 8
+Warning (10030): Net "memory.we_a" at icache.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/icache/icache.v Line: 8
+Info (12128): Elaborating entity "disp7segs" for hierarchy "disp7segs:disp_0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo_fpga.v Line: 43
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/db/monociclo.ram0_ichache_f5c6e3f2.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Info (13000): Registers with preset signals will power-up high File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/fpga/divisor50mhz.v Line: 7
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "disp0[0]" is stuck at GND File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/monociclo_fpga.v Line: 5
-    Warning (13410): Pin "disp7[0]" is stuck at GND File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/monociclo_fpga.v Line: 14
-    Warning (13410): Pin "disp7[4]" is stuck at GND File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/monociclo_fpga.v Line: 14
-    Warning (13410): Pin "disp7[5]" is stuck at GND File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura_Practicas/monociclo_fpga/monociclo_fpga.v Line: 14
+    Warning (13410): Pin "disp0[0]" is stuck at GND File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo_fpga.v Line: 5
+    Warning (13410): Pin "disp7[0]" is stuck at GND File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo_fpga.v Line: 14
+    Warning (13410): Pin "disp7[4]" is stuck at GND File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo_fpga.v Line: 14
+    Warning (13410): Pin "disp7[5]" is stuck at GND File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo_fpga.v Line: 14
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 22 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 189 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 245 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 56 output pins
-    Info (21061): Implemented 131 logic cells
+    Info (21061): Implemented 187 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 4811 megabytes
-    Info: Processing ended: Thu Oct 19 00:47:16 2023
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Peak virtual memory: 4784 megabytes
+    Info: Processing ended: Thu Oct 19 20:55:07 2023
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:17
 
 

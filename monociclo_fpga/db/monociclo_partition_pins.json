@@ -212,11 +212,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk_i",
+					"name" : "rst_ni",
 					"strict" : false
 				},
 				{
-					"name" : "rst_ni",
+					"name" : "clk_i",
 					"strict" : false
 				}
 			]
