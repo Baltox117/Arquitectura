@@ -25,7 +25,10 @@ module monociclo(
 	wire		[31:0]	se_dato_o;
 	wire		[31:0]	alusrc_dato_o;
 	wire		[31:0]	mem_dato_o;
-	wire		[31:0]	ex_brflag_o;
+	wire					ex_brflag_o;
+	wire		[31:0]	sl_dato_o;
+	wire					and_flag_o;
+	wire		[31:0] 	to_dato_o;
 	
 	//---------------------------------------------
 	// FETCH STAGE - IF
@@ -106,7 +109,6 @@ module monociclo(
 	//
 	
 	assign sl_dato_o = se_dato_o << 1;
-	 
 	assign to_dato_o = sl_dato_o + pc_w;
 	
 	assign and_flag_o = ex_brflag_o & id_branch_o;
@@ -123,11 +125,11 @@ module monociclo(
 		.B_i			(alusrc_dato_o),
 		.c_i			(1'b0),
 		.branch_i	(id_branch_i),
-		.brctrl_i	(3'b0),
+		.brctrl_i	(2'b0),
 		.ope_i		({if_inst_o[30], if_inst_o[14:12]}),
 		.c_o			(c_o),
 		.sal_o		(ex_dato_o),
-		.brflag		(ex_brflag_o)
+		.brflag_o	(ex_brflag_o)
 	
 	);
 	

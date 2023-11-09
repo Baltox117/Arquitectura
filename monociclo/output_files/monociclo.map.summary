@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Fri Nov 03 19:19:09 2023
+Analysis & Synthesis Status : Successful - Wed Nov 08 20:59:09 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : monociclo
 Top-level Entity Name : monociclo
 Family : Cyclone IV E
-Total logic elements : 58,295
-    Total combinational functions : 24,567
+Total logic elements : 58,317
+    Total combinational functions : 24,589
     Dedicated logic registers : 33,800
 Total registers : 33800
 Total pins : 34
