@@ -1,5 +1,5 @@
 Analysis & Synthesis report for monociclo
-Thu Oct 19 20:55:07 2023
+Thu Nov 09 20:28:11 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 19 20:55:07 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 09 20:28:11 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; monociclo                                   ;
 ; Top-level Entity Name              ; monociclo_fpga                              ;
@@ -161,8 +161,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -306,7 +305,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Oct 19 20:54:54 2023
+    Info: Processing started: Thu Nov 09 20:27:57 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off monociclo -c monociclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -323,14 +322,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file monocic
 Info (12021): Found 1 design units, including 1 entities, in source file fpga/divisor50mhz.v
     Info (12023): Found entity 1: divisor50mhz File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/fpga/divisor50mhz.v Line: 1
 Info (12127): Elaborating entity "monociclo_fpga" for the top level hierarchy
-Info (12128): Elaborating entity "divisor50mhz" for hierarchy "divisor50mhz:div50_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo_fpga.v Line: 25
-Info (12128): Elaborating entity "monociclo" for hierarchy "monociclo:DUT" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo_fpga.v Line: 34
-Info (12128): Elaborating entity "ichache" for hierarchy "monociclo:DUT|ichache:icache_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo.v Line: 35
+Info (12128): Elaborating entity "divisor50mhz" for hierarchy "divisor50mhz:div50_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo_fpga.v Line: 26
+Info (12128): Elaborating entity "monociclo" for hierarchy "monociclo:DUT" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo_fpga.v Line: 35
+Info (12128): Elaborating entity "ichache" for hierarchy "monociclo:DUT|ichache:icache_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo.v Line: 36
 Warning (10850): Verilog HDL warning at icache.v(12): number of words (30) in memory file does not match the number of elements in the address range [0:255] File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/icache/icache.v Line: 12
 Warning (10030): Net "memory.data_a" at icache.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/icache/icache.v Line: 8
 Warning (10030): Net "memory.waddr_a" at icache.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/icache/icache.v Line: 8
 Warning (10030): Net "memory.we_a" at icache.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/icache/icache.v Line: 8
-Info (12128): Elaborating entity "disp7segs" for hierarchy "disp7segs:disp_0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo_fpga.v Line: 43
+Info (12128): Elaborating entity "disp7segs" for hierarchy "disp7segs:disp_0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/monociclo_fpga.v Line: 44
 Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/db/monociclo.ram0_ichache_f5c6e3f2.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Info (13000): Registers with preset signals will power-up high File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo_fpga/fpga/divisor50mhz.v Line: 7
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
@@ -348,9 +347,9 @@ Info (21057): Implemented 245 device resources after synthesis - the final resou
     Info (21059): Implemented 56 output pins
     Info (21061): Implemented 187 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 4784 megabytes
-    Info: Processing ended: Thu Oct 19 20:55:07 2023
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Peak virtual memory: 4765 megabytes
+    Info: Processing ended: Thu Nov 09 20:28:11 2023
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:18
 
 
