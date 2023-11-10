@@ -124,7 +124,7 @@ module monociclo(
 		.A_i			(rr_dators1_o),
 		.B_i			(alusrc_dato_o),
 		.c_i			(1'b0),
-		.branch_i	(id_branch_i),
+		.branch_i	(id_branch_o),
 		.brctrl_i	(2'b0),
 		.ope_i		({if_inst_o[30], if_inst_o[14:12]}),
 		.c_o			(c_o),

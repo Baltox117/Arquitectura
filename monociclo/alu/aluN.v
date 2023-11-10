@@ -52,7 +52,7 @@ module aluN #(
 	flagdetector flagdetector_u0(
 	
 		.branch_i		(branch_i),
-		.brctrl_i		(op),
+		.brctrl_i		(brctrl_i),
 		.resultado_i	(sal_o),
 		.brflag_o		(brflag_o)
 
