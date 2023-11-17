@@ -66,10 +66,7 @@ module alu (
 					res_o = wiresrl_w;
 			3'b111:
 					res_o = wiresra_w;
-			/*3'b000:
-			3'b000:
-			3'b000:
-			3'b000:*/
+			
 			default:
 					res_o	= 1'b0;
 		endcase

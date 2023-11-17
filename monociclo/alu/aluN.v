@@ -2,15 +2,15 @@ module aluN #(
 	parameter			N=32
 )
 (
-	input			[N-1:0]	A_i,
-	input			[N-1:0]	B_i,
-	input						c_i,
-	input			[3:0]		ope_i,
-	input						branch_i,
-	input			[2:0]		brctrl_i,
-	output					c_o,
-	output		[N-1:0]	sal_o,
-	output					brflag_o
+	input			[N-1:0]	A_i, // Dato de entrada 1
+	input			[N-1:0]	B_i, // Dato de entrada 2
+	input						c_i, // Acarreo de entrada
+	input			[3:0]		ope_i,	// codigo de operacion
+	input						branch_i,	// entrada para saber si es una instruccion tipo B
+	input			[2:0]		brctrl_i,	// entrada de control para el salto
+	output					c_o,		// Acarreo de salida
+	output		[N-1:0]	sal_o,	// resultado de la operacion
+	output					brflag_o	// bandera para 
 );
 
 	wire			[N:0]		carryint_w;

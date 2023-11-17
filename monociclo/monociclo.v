@@ -29,7 +29,8 @@ module monociclo(
 	wire		[31:0]	sl_dato_o;
 	wire					and_flag_o;
 	wire		[31:0] 	to_dato_o;
-	
+	wire		[4:0]		id_aluop_o;
+	wire		[4:0]		aluctrl_aluoperacion_o;
 	//---------------------------------------------
 	// FETCH STAGE - IF
 	//---------------------------------------------
@@ -66,7 +67,8 @@ module monociclo(
 		.memread_o		(id_memread_o),
 		.memwrite_o		(id_memwrite_o),
 		.memtoreg_o		(id_memtoreg_o),
-		.branch_o		(id_branch_o)
+		.branch_o		(id_branch_o),
+		.aluop_o			(id_aluop_o)
 
 	);
 	
@@ -116,6 +118,19 @@ module monociclo(
 	assign pcnext_w = (and_flag_o) ? to_dato_o : pc_w + 4'h4;
 	
 	//
+	// ALU CONTROL - ALUCTRL
+	//
+	
+	aluctrl (
+
+		.f7_i				(if_inst_o[30]),
+		.f3_i				(if_inst_o[14:12]),
+		.aluop_i			(id_aluop_o),
+		.aluoperacion_o	(aluctrl_aluoperacion_o)
+	
+	);
+	
+	//
 	// EXECUTE STAGE - EX
 	//
 	
@@ -123,10 +138,10 @@ module monociclo(
 	
 		.A_i			(rr_dators1_o),
 		.B_i			(alusrc_dato_o),
-		.c_i			(1'b0),
+		.c_i			(aluctrl_aluoperacion_o[2]),
 		.branch_i	(id_branch_o),
-		.brctrl_i	(2'b0),
-		.ope_i		({if_inst_o[30], if_inst_o[14:12]}),
+		.brctrl_i	(3'b0),
+		.ope_i		(aluctrl_aluoperacion_o),
 		.c_o			(c_o),
 		.sal_o		(ex_dato_o),
 		.brflag_o	(ex_brflag_o)
