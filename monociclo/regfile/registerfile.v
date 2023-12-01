@@ -12,7 +12,7 @@ module registerfile(
 
 );
 
-	reg		[31:0]	regfile	[2**5-1:0];
+	reg		[31:0]	regfile	[2**5-1:0]; // registros totales 
 	
 	initial
 	begin
@@ -25,7 +25,7 @@ module registerfile(
 			regfile[addrrd_i] = datord_i;
 	end
 	
-	assign 	dators1_o = regfile[addrrs1_i];
-	assign 	dators2_o = regfile[addrrs2_i];
+	assign 	dators1_o = regfile[addrrs1_i]; // dato fuente 1
+	assign 	dators2_o = regfile[addrrs2_i]; // dato fuente 2
 
 endmodule 

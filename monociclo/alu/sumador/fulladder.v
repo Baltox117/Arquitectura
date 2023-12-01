@@ -36,9 +36,9 @@ module fulladder_tb ();
 
 // 2do paso - input pasa a ser reg, output pasa a ser wire
 
-	reg					a_i;//valor de entrada en A
-	reg					b_i;//valor de entrada en B
-	reg					c_i;//acarreo de entrada de nuestra suma
+	reg						a_i;//valor de entrada en A
+	reg						b_i;//valor de entrada en B
+	reg						c_i;//acarreo de entrada de nuestra suma
 	wire					c_o;//acarreo de salida de nuestra suma
 	wire					res_o;//resultado de nuestra suma
 	

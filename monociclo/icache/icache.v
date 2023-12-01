@@ -5,7 +5,7 @@ module ichache(
 
 );
 
-	reg		[31:0]	memory	[2**8-1:0];
+	reg		[31:0]	memory	[2**5-1:0]; // modificar la memoria (tamaño original 8)
 	
 	initial
 	begin

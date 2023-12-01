@@ -16,7 +16,7 @@ module divisor50mhz(
 				clk1hz_o = 1'b1;// señal de salida en alto
 			end
 		else 
-			if(ctr_w == 32'd50_000_000)//comprobamos si alcanzo el valor de 50MHz
+			if(ctr_w == 32'd25_000_000)//comprobamos si alcanzo el valor de 50MHz
 				begin
 					ctr_w = 32'b0;//contador se pone en 0
 					clk1hz_o = ~clk1hz_o;//invertimos la señal de salid

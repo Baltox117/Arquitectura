@@ -1,5 +1,5 @@
 Analysis & Synthesis report for monociclo
-Fri Nov 17 16:04:38 2023
+Thu Nov 30 21:09:10 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -15,43 +15,43 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. User-Specified and Inferred Latches
   9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Inverted Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: monociclo:DUT|aluN:execute_u0
- 14. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[31].alu_N"
- 15. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[30].alu_N"
- 16. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[29].alu_N"
- 17. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[28].alu_N"
- 18. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[27].alu_N"
- 19. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[26].alu_N"
- 20. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[25].alu_N"
- 21. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[24].alu_N"
- 22. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[23].alu_N"
- 23. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[22].alu_N"
- 24. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[21].alu_N"
- 25. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[20].alu_N"
- 26. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[19].alu_N"
- 27. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[18].alu_N"
- 28. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[17].alu_N"
- 29. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[16].alu_N"
- 30. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[15].alu_N"
- 31. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[14].alu_N"
- 32. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[13].alu_N"
- 33. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[12].alu_N"
- 34. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[11].alu_N"
- 35. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[10].alu_N"
- 36. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[9].alu_N"
- 37. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[8].alu_N"
- 38. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[7].alu_N"
- 39. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[6].alu_N"
- 40. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[5].alu_N"
- 41. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[4].alu_N"
- 42. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[3].alu_N"
- 43. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[2].alu_N"
- 44. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[1].alu_N"
- 45. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0"
- 46. Port Connectivity Checks: "monociclo:DUT|aluctrl:comb_233"
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Parameter Settings for User Entity Instance: monociclo:DUT|aluN:execute_u0
+ 15. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[31].alu_N"
+ 16. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[30].alu_N"
+ 17. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[29].alu_N"
+ 18. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[28].alu_N"
+ 19. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[27].alu_N"
+ 20. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[26].alu_N"
+ 21. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[25].alu_N"
+ 22. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[24].alu_N"
+ 23. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[23].alu_N"
+ 24. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[22].alu_N"
+ 25. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[21].alu_N"
+ 26. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[20].alu_N"
+ 27. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[19].alu_N"
+ 28. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[18].alu_N"
+ 29. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[17].alu_N"
+ 30. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[16].alu_N"
+ 31. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[15].alu_N"
+ 32. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[14].alu_N"
+ 33. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[13].alu_N"
+ 34. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[12].alu_N"
+ 35. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[11].alu_N"
+ 36. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[10].alu_N"
+ 37. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[9].alu_N"
+ 38. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[8].alu_N"
+ 39. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[7].alu_N"
+ 40. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[6].alu_N"
+ 41. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[5].alu_N"
+ 42. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[4].alu_N"
+ 43. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[3].alu_N"
+ 44. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[2].alu_N"
+ 45. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0|alu:alutag[1].alu_N"
+ 46. Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0"
  47. Post-Synthesis Netlist Statistics for Top Partition
  48. Elapsed Time Per Partition
  49. Analysis & Synthesis Messages
@@ -81,15 +81,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 17 16:04:37 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 30 21:09:10 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; monociclo                                   ;
 ; Top-level Entity Name              ; monociclo_fpga                              ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 58,503                                      ;
-;     Total combinational functions  ; 24,775                                      ;
-;     Dedicated logic registers      ; 33,834                                      ;
-; Total registers                    ; 33834                                       ;
+; Total logic elements               ; 3,233                                       ;
+;     Total combinational functions  ; 1,953                                       ;
+;     Dedicated logic registers      ; 1,383                                       ;
+; Total registers                    ; 1383                                        ;
 ; Total pins                         ; 58                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -192,14 +192,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.04        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.5%      ;
-;     Processor 3            ;   1.3%      ;
-;     Processor 4            ;   1.2%      ;
+;     Processor 2            ;   0.5%      ;
+;     Processor 3            ;   0.3%      ;
+;     Processor 4            ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -231,20 +231,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------------+
 ; Resource                                    ; Usage                          ;
 +---------------------------------------------+--------------------------------+
-; Estimated Total logic elements              ; 58,503                         ;
+; Estimated Total logic elements              ; 3,233                          ;
 ;                                             ;                                ;
-; Total combinational functions               ; 24775                          ;
+; Total combinational functions               ; 1953                           ;
 ; Logic element usage by number of LUT inputs ;                                ;
-;     -- 4 input functions                    ; 24602                          ;
-;     -- 3 input functions                    ; 122                            ;
-;     -- <=2 input functions                  ; 51                             ;
+;     -- 4 input functions                    ; 1455                           ;
+;     -- 3 input functions                    ; 427                            ;
+;     -- <=2 input functions                  ; 71                             ;
 ;                                             ;                                ;
 ; Logic elements by mode                      ;                                ;
-;     -- normal mode                          ; 24729                          ;
-;     -- arithmetic mode                      ; 46                             ;
+;     -- normal mode                          ; 1913                           ;
+;     -- arithmetic mode                      ; 40                             ;
 ;                                             ;                                ;
-; Total registers                             ; 33834                          ;
-;     -- Dedicated logic registers            ; 33834                          ;
+; Total registers                             ; 1383                           ;
+;     -- Dedicated logic registers            ; 1383                           ;
 ;     -- I/O registers                        ; 0                              ;
 ;                                             ;                                ;
 ; I/O pins                                    ; 58                             ;
@@ -252,126 +252,859 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0                              ;
 ;                                             ;                                ;
 ; Maximum fan-out node                        ; divisor50mhz:div50_u0|clk1hz_o ;
-; Maximum fan-out                             ; 33802                          ;
-; Total fan-out                               ; 200506                         ;
-; Average fan-out                             ; 3.41                           ;
+; Maximum fan-out                             ; 1351                           ;
+; Total fan-out                               ; 11514                          ;
+; Average fan-out                             ; 3.34                           ;
 +---------------------------------------------+--------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                          ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+----------------+--------------+
-; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Entity Name    ; Library Name ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+----------------+--------------+
-; |monociclo_fpga                 ; 24775 (0)           ; 33834 (0)                 ; 0           ; 0            ; 0       ; 0         ; 58   ; 0            ; |monociclo_fpga                                                                 ; monociclo_fpga ; work         ;
-;    |disp7segs:disp_0|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_0                                                ; disp7segs      ; work         ;
-;    |disp7segs:disp_1|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_1                                                ; disp7segs      ; work         ;
-;    |disp7segs:disp_2|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_2                                                ; disp7segs      ; work         ;
-;    |disp7segs:disp_3|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_3                                                ; disp7segs      ; work         ;
-;    |disp7segs:disp_4|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_4                                                ; disp7segs      ; work         ;
-;    |disp7segs:disp_5|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_5                                                ; disp7segs      ; work         ;
-;    |disp7segs:disp_6|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_6                                                ; disp7segs      ; work         ;
-;    |disp7segs:disp_7|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_7                                                ; disp7segs      ; work         ;
-;    |divisor50mhz:div50_u0|      ; 56 (56)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|divisor50mhz:div50_u0                                           ; divisor50mhz   ; work         ;
-;    |monociclo:DUT|              ; 24663 (106)         ; 33801 (9)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT                                                   ; monociclo      ; work         ;
-;       |SignExtend:signex|       ; 27 (27)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|SignExtend:signex                                 ; SignExtend     ; work         ;
-;       |aluN:execute_u0|         ; 169 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0                                   ; aluN           ; work         ;
-;          |alu:alutag[0].alu_N|  ; 10 (9)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[0].alu_N               ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[0].alu_N|fulladder:fa  ; fulladder      ; work         ;
-;          |alu:alutag[10].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[10].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[10].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[11].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[11].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[11].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[12].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[12].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[12].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[13].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[13].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[13].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[14].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[14].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[14].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[15].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[15].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[15].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[16].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[16].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[16].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[17].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[17].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[17].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[18].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[18].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[18].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[19].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[19].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[19].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[1].alu_N|  ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[1].alu_N               ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[1].alu_N|fulladder:fa  ; fulladder      ; work         ;
-;          |alu:alutag[20].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[20].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[20].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[21].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[21].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[21].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[22].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[22].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[22].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[23].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[23].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[23].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[24].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[24].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[24].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[25].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[25].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[25].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[26].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[26].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[26].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[27].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[27].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[27].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[28].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[28].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[28].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[29].alu_N| ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[29].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[29].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[2].alu_N|  ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[2].alu_N               ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[2].alu_N|fulladder:fa  ; fulladder      ; work         ;
-;          |alu:alutag[30].alu_N| ; 6 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[30].alu_N              ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[30].alu_N|fulladder:fa ; fulladder      ; work         ;
-;          |alu:alutag[31].alu_N| ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[31].alu_N              ; alu            ; work         ;
-;          |alu:alutag[3].alu_N|  ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[3].alu_N               ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[3].alu_N|fulladder:fa  ; fulladder      ; work         ;
-;          |alu:alutag[4].alu_N|  ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[4].alu_N               ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[4].alu_N|fulladder:fa  ; fulladder      ; work         ;
-;          |alu:alutag[5].alu_N|  ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[5].alu_N               ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[5].alu_N|fulladder:fa  ; fulladder      ; work         ;
-;          |alu:alutag[6].alu_N|  ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[6].alu_N               ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[6].alu_N|fulladder:fa  ; fulladder      ; work         ;
-;          |alu:alutag[7].alu_N|  ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[7].alu_N               ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[7].alu_N|fulladder:fa  ; fulladder      ; work         ;
-;          |alu:alutag[8].alu_N|  ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[8].alu_N               ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[8].alu_N|fulladder:fa  ; fulladder      ; work         ;
-;          |alu:alutag[9].alu_N|  ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[9].alu_N               ; alu            ; work         ;
-;             |fulladder:fa|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[9].alu_N|fulladder:fa  ; fulladder      ; work         ;
-;       |aluctrl:comb_233|        ; 19 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluctrl:comb_233                                  ; aluctrl        ; work         ;
-;       |dchache:dcache_u0|       ; 22883 (22883)       ; 32768 (32768)             ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|dchache:dcache_u0                                 ; dchache        ; work         ;
-;       |decode:decode_u0|        ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|decode:decode_u0                                  ; decode         ; work         ;
-;       |ichache:icache_u0|       ; 62 (62)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|ichache:icache_u0                                 ; ichache        ; work         ;
-;       |registerfile:regfile|    ; 1392 (1392)         ; 1024 (1024)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|registerfile:regfile                              ; registerfile   ; work         ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+----------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                  ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Entity Name    ; Library Name ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+----------------+--------------+
+; |monociclo_fpga                         ; 1953 (0)            ; 1383 (0)                  ; 0           ; 0            ; 0       ; 0         ; 58   ; 0            ; |monociclo_fpga                                                                 ; monociclo_fpga ; work         ;
+;    |disp7segs:disp_0|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_0                                                ; disp7segs      ; work         ;
+;    |disp7segs:disp_1|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_1                                                ; disp7segs      ; work         ;
+;    |disp7segs:disp_2|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_2                                                ; disp7segs      ; work         ;
+;    |disp7segs:disp_3|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_3                                                ; disp7segs      ; work         ;
+;    |disp7segs:disp_4|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_4                                                ; disp7segs      ; work         ;
+;    |disp7segs:disp_5|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_5                                                ; disp7segs      ; work         ;
+;    |disp7segs:disp_6|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_6                                                ; disp7segs      ; work         ;
+;    |disp7segs:disp_7|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|disp7segs:disp_7                                                ; disp7segs      ; work         ;
+;    |divisor50mhz:div50_u0|              ; 56 (56)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|divisor50mhz:div50_u0                                           ; divisor50mhz   ; work         ;
+;    |monociclo:DUT|                      ; 1841 (119)          ; 1350 (6)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT                                                   ; monociclo      ; work         ;
+;       |SignExtend:signex|               ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|SignExtend:signex                                 ; SignExtend     ; work         ;
+;       |aluN:execute_u0|                 ; 183 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0                                   ; aluN           ; work         ;
+;          |alu:alutag[0].alu_N|          ; 9 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[0].alu_N               ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[0].alu_N|fulladder:fa  ; fulladder      ; work         ;
+;          |alu:alutag[10].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[10].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[10].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[11].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[11].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[11].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[12].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[12].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[12].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[13].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[13].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[13].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[14].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[14].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[14].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[15].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[15].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[15].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[16].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[16].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[16].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[17].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[17].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[17].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[18].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[18].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[18].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[19].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[19].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[19].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[1].alu_N|          ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[1].alu_N               ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[1].alu_N|fulladder:fa  ; fulladder      ; work         ;
+;          |alu:alutag[20].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[20].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[20].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[21].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[21].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[21].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[22].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[22].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[22].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[23].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[23].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[23].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[24].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[24].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[24].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[25].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[25].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[25].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[26].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[26].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[26].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[27].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[27].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[27].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[28].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[28].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[28].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[29].alu_N|         ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[29].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[29].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[2].alu_N|          ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[2].alu_N               ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[2].alu_N|fulladder:fa  ; fulladder      ; work         ;
+;          |alu:alutag[30].alu_N|         ; 6 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[30].alu_N              ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[30].alu_N|fulladder:fa ; fulladder      ; work         ;
+;          |alu:alutag[31].alu_N|         ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[31].alu_N              ; alu            ; work         ;
+;          |alu:alutag[3].alu_N|          ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[3].alu_N               ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[3].alu_N|fulladder:fa  ; fulladder      ; work         ;
+;          |alu:alutag[4].alu_N|          ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[4].alu_N               ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[4].alu_N|fulladder:fa  ; fulladder      ; work         ;
+;          |alu:alutag[5].alu_N|          ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[5].alu_N               ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[5].alu_N|fulladder:fa  ; fulladder      ; work         ;
+;          |alu:alutag[6].alu_N|          ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[6].alu_N               ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[6].alu_N|fulladder:fa  ; fulladder      ; work         ;
+;          |alu:alutag[7].alu_N|          ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[7].alu_N               ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[7].alu_N|fulladder:fa  ; fulladder      ; work         ;
+;          |alu:alutag[8].alu_N|          ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[8].alu_N               ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[8].alu_N|fulladder:fa  ; fulladder      ; work         ;
+;          |alu:alutag[9].alu_N|          ; 5 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[9].alu_N               ; alu            ; work         ;
+;             |fulladder:fa|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|alu:alutag[9].alu_N|fulladder:fa  ; fulladder      ; work         ;
+;          |flagdetector:flagdetector_u0| ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluN:execute_u0|flagdetector:flagdetector_u0      ; flagdetector   ; work         ;
+;       |aluctrl:aluctrl_u0|              ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|aluctrl:aluctrl_u0                                ; aluctrl        ; work         ;
+;       |dchache:dcache_u0|               ; 688 (688)           ; 1024 (1024)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|dchache:dcache_u0                                 ; dchache        ; work         ;
+;       |ichache:icache_u0|               ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|ichache:icache_u0                                 ; ichache        ; work         ;
+;       |registerfile:regfile|            ; 802 (802)           ; 320 (320)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:DUT|registerfile:regfile                              ; registerfile   ; work         ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                                     ;
-+---------------------------------------------------------------------+------------------------------------------+------------------------+
-; Latch Name                                                          ; Latch Enable Signal                      ; Free of Timing Hazards ;
-+---------------------------------------------------------------------+------------------------------------------+------------------------+
-; monociclo:DUT|aluctrl:comb_233|aluoperacion_o[3]                    ; monociclo:DUT|aluctrl:comb_233|Selector5 ; yes                    ;
-; monociclo:DUT|aluctrl:comb_233|aluoperacion_o[1]                    ; monociclo:DUT|aluctrl:comb_233|Selector5 ; yes                    ;
-; monociclo:DUT|aluctrl:comb_233|aluoperacion_o[2]                    ; monociclo:DUT|aluctrl:comb_233|Selector5 ; yes                    ;
-; monociclo:DUT|aluctrl:comb_233|aluoperacion_o[0]                    ; monociclo:DUT|aluctrl:comb_233|Selector5 ; yes                    ;
-; monociclo:DUT|aluN:execute_u0|flagdetector:flagdetector_u0|brflag_o ; VCC                                      ; yes                    ;
-; Number of user-specified and inferred latches = 5                   ;                                          ;                        ;
-+---------------------------------------------------------------------+------------------------------------------+------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                                                              ;
++---------------------------------------------------------------------+-------------------------------------------------------------------+------------------------+
+; Latch Name                                                          ; Latch Enable Signal                                               ; Free of Timing Hazards ;
++---------------------------------------------------------------------+-------------------------------------------------------------------+------------------------+
+; monociclo:DUT|aluctrl:aluctrl_u0|aluoperacion_o[3]                  ; monociclo:DUT|aluctrl:aluctrl_u0|Selector5                        ; yes                    ;
+; monociclo:DUT|aluctrl:aluctrl_u0|aluoperacion_o[1]                  ; monociclo:DUT|aluctrl:aluctrl_u0|Selector5                        ; yes                    ;
+; monociclo:DUT|aluctrl:aluctrl_u0|aluoperacion_o[2]                  ; monociclo:DUT|aluctrl:aluctrl_u0|Selector5                        ; yes                    ;
+; monociclo:DUT|aluctrl:aluctrl_u0|aluoperacion_o[0]                  ; monociclo:DUT|aluctrl:aluctrl_u0|Selector5                        ; yes                    ;
+; monociclo:DUT|aluN:execute_u0|flagdetector:flagdetector_u0|brflag_o ; monociclo:DUT|aluN:execute_u0|flagdetector:flagdetector_u0|Equal1 ; yes                    ;
+; Number of user-specified and inferred latches = 5                   ;                                                                   ;                        ;
++---------------------------------------------------------------------+-------------------------------------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; monociclo:DUT|pc_w[0]                  ; Stuck at GND due to stuck port data_in ;
-; monociclo:DUT|pc_w[10..31]             ; Lost fanout                            ;
-; Total Number of Removed Registers = 23 ;                                        ;
-+----------------------------------------+----------------------------------------+
++----------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                           ;
++------------------------------------------------+---------------------------------------------+
+; Register name                                  ; Reason for Removal                          ;
++------------------------------------------------+---------------------------------------------+
+; monociclo:DUT|pc_w[0]                          ; Stuck at GND due to stuck port data_in      ;
+; monociclo:DUT|pc_w[7..31]                      ; Lost fanout                                 ;
+; monociclo:DUT|registerfile:regfile|regfile~64  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~65  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~66  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~67  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~68  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~69  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~70  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~71  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~72  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~73  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~74  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~75  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~76  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~77  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~78  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~79  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~80  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~81  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~82  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~83  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~84  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~85  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~86  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~87  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~88  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~89  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~90  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~91  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~92  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~93  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~94  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~95  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~448 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~449 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~450 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~451 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~452 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~453 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~454 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~455 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~456 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~457 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~458 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~459 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~460 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~461 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~462 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~463 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~464 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~465 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~466 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~467 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~468 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~469 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~470 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~471 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~472 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~473 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~474 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~475 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~476 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~477 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~478 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~479 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~416 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~417 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~418 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~419 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~420 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~421 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~422 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~423 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~424 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~425 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~426 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~427 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~428 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~429 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~430 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~431 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~432 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~433 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~434 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~435 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~436 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~437 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~438 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~439 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~440 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~441 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~442 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~443 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~444 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~445 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~446 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~447 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~384 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~385 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~386 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~387 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~388 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~389 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~390 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~391 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~392 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~393 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~394 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~395 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~396 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~397 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~398 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~399 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~400 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~401 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~402 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~403 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~404 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~405 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~406 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~407 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~408 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~409 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~410 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~411 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~412 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~413 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~414 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~415 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~480 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~481 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~482 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~483 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~484 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~485 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~486 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~487 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~488 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~489 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~490 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~491 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~492 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~493 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~494 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~495 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~496 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~497 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~498 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~499 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~500 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~501 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~502 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~503 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~504 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~505 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~506 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~507 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~508 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~509 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~510 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~511 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~768 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~769 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~770 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~771 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~772 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~773 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~774 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~775 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~776 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~777 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~778 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~779 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~780 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~781 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~782 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~783 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~784 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~785 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~786 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~787 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~788 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~789 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~790 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~791 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~792 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~793 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~794 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~795 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~796 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~797 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~798 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~799 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~800 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~801 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~802 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~803 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~804 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~805 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~806 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~807 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~808 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~809 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~810 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~811 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~812 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~813 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~814 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~815 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~816 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~817 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~818 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~819 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~820 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~821 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~822 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~823 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~824 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~825 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~826 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~827 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~828 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~829 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~830 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~831 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~672 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~673 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~674 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~675 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~676 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~677 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~678 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~679 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~680 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~681 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~682 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~683 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~684 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~685 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~686 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~687 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~688 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~689 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~690 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~691 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~692 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~693 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~694 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~695 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~696 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~697 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~698 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~699 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~700 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~701 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~702 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~703 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~704 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~705 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~706 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~707 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~708 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~709 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~710 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~711 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~712 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~713 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~714 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~715 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~716 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~717 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~718 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~719 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~720 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~721 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~722 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~723 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~724 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~725 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~726 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~727 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~728 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~729 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~730 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~731 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~732 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~733 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~734 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~735 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~736 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~737 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~738 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~739 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~740 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~741 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~742 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~743 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~744 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~745 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~746 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~747 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~748 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~749 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~750 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~751 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~752 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~753 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~754 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~755 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~756 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~757 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~758 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~759 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~760 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~761 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~762 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~763 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~764 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~765 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~766 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~767 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~832 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~833 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~834 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~835 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~836 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~837 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~838 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~839 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~840 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~841 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~842 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~843 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~844 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~845 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~846 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~847 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~848 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~849 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~850 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~851 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~852 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~853 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~854 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~855 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~856 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~857 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~858 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~859 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~860 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~861 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~862 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~863 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~320 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~321 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~322 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~323 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~324 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~325 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~326 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~327 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~328 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~329 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~330 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~331 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~332 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~333 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~334 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~335 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~336 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~337 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~338 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~339 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~340 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~341 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~342 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~343 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~344 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~345 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~346 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~347 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~348 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~349 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~350 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~351 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~544 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~545 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~546 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~547 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~548 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~549 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~550 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~551 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~552 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~553 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~554 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~555 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~556 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~557 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~558 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~559 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~560 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~561 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~562 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~563 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~564 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~565 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~566 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~567 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~568 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~569 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~570 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~571 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~572 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~573 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~574 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~575 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~32  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~33  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~34  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~35  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~36  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~37  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~38  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~39  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~40  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~41  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~42  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~43  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~44  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~45  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~46  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~47  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~48  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~49  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~50  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~51  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~52  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~53  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~54  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~55  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~56  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~57  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~58  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~59  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~60  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~61  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~62  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~63  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~640 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~641 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~642 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~643 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~644 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~645 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~646 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~647 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~648 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~649 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~650 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~651 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~652 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~653 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~654 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~655 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~656 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~657 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~658 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~659 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~660 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~661 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~662 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~663 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~664 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~665 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~666 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~667 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~668 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~669 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~670 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~671 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~128 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~129 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~130 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~131 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~132 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~133 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~134 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~135 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~136 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~137 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~138 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~139 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~140 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~141 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~142 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~143 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~144 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~145 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~146 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~147 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~148 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~149 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~150 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~151 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~152 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~153 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~154 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~155 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~156 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~157 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~158 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~159 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~512 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~513 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~514 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~515 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~516 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~517 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~518 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~519 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~520 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~521 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~522 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~523 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~524 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~525 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~526 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~527 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~528 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~529 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~530 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~531 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~532 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~533 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~534 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~535 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~536 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~537 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~538 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~539 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~540 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~541 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~542 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~543 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~0   ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~1   ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~2   ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~3   ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~4   ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~5   ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~6   ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~7   ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~8   ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~9   ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~10  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~11  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~12  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~13  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~14  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~15  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~16  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~17  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~18  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~19  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~20  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~21  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~22  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~23  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~24  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~25  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~26  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~27  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~28  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~29  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~30  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~31  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~864 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~865 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~866 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~867 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~868 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~869 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~870 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~871 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~872 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~873 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~874 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~875 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~876 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~877 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~878 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~879 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~880 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~881 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~882 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~883 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~884 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~885 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~886 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~887 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~888 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~889 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~890 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~891 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~892 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~893 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~894 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~895 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~352 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~353 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~354 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~355 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~356 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~357 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~358 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~359 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~360 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~361 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~362 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~363 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~364 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~365 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~366 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~367 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~368 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~369 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~370 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~371 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~372 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~373 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~374 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~375 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~376 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~377 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~378 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~379 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~380 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~381 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~382 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~383 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~608 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~609 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~610 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~611 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~612 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~613 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~614 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~615 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~616 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~617 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~618 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~619 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~620 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~621 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~622 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~623 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~624 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~625 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~626 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~627 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~628 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~629 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~630 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~631 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~632 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~633 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~634 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~635 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~636 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~637 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~638 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~639 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~96  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~97  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~98  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~99  ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~100 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~101 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~102 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~103 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~104 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~105 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~106 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~107 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~108 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~109 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~110 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~111 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~112 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~113 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~114 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~115 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~116 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~117 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~118 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~119 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~120 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~121 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~122 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~123 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~124 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~125 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~126 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:DUT|registerfile:regfile|regfile~127 ; Stuck at GND due to stuck port clock_enable ;
+; Total Number of Removed Registers = 730        ;                                             ;
++------------------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                       ;
++------------------------------------------------+--------------------------------+-------------------------------------------------+
+; Register name                                  ; Reason for Removal             ; Registers Removed due to This Register          ;
++------------------------------------------------+--------------------------------+-------------------------------------------------+
+; monociclo:DUT|registerfile:regfile|regfile~451 ; Stuck at GND                   ; monociclo:DUT|registerfile:regfile|regfile~453, ;
+;                                                ; due to stuck port clock_enable ; monociclo:DUT|registerfile:regfile|regfile~421, ;
+;                                                ;                                ; monociclo:DUT|registerfile:regfile|regfile~389, ;
+;                                                ;                                ; monociclo:DUT|registerfile:regfile|regfile~485, ;
+;                                                ;                                ; monociclo:DUT|registerfile:regfile|regfile~773, ;
+;                                                ;                                ; monociclo:DUT|registerfile:regfile|regfile~805, ;
+;                                                ;                                ; monociclo:DUT|registerfile:regfile|regfile~677, ;
+;                                                ;                                ; monociclo:DUT|registerfile:regfile|regfile~709, ;
+;                                                ;                                ; monociclo:DUT|registerfile:regfile|regfile~741, ;
+;                                                ;                                ; monociclo:DUT|registerfile:regfile|regfile~837, ;
+;                                                ;                                ; monociclo:DUT|registerfile:regfile|regfile~325, ;
+;                                                ;                                ; monociclo:DUT|registerfile:regfile|regfile~549, ;
+;                                                ;                                ; monociclo:DUT|registerfile:regfile|regfile~37,  ;
+;                                                ;                                ; monociclo:DUT|registerfile:regfile|regfile~645, ;
+;                                                ;                                ; monociclo:DUT|registerfile:regfile|regfile~133, ;
+;                                                ;                                ; monociclo:DUT|registerfile:regfile|regfile~517, ;
+;                                                ;                                ; monociclo:DUT|registerfile:regfile|regfile~5,   ;
+;                                                ;                                ; monociclo:DUT|registerfile:regfile|regfile~869, ;
+;                                                ;                                ; monociclo:DUT|registerfile:regfile|regfile~357, ;
+;                                                ;                                ; monociclo:DUT|registerfile:regfile|regfile~613, ;
+;                                                ;                                ; monociclo:DUT|registerfile:regfile|regfile~101  ;
++------------------------------------------------+--------------------------------+-------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -379,12 +1112,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 33834 ;
+; Total registers                              ; 1383  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 8     ;
-; Number of registers using Asynchronous Clear ; 42    ;
+; Number of registers using Synchronous Load   ; 5     ;
+; Number of registers using Asynchronous Clear ; 39    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 33792 ;
+; Number of registers using Clock Enable       ; 1344  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -394,20 +1127,20 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; divisor50mhz:div50_u0|clk1hz_o         ; 33802   ;
+; divisor50mhz:div50_u0|clk1hz_o         ; 1351    ;
 ; Total number of inverted registers = 1 ;         ;
 +----------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |monociclo_fpga|monociclo:DUT|SignExtend:signex|Selector7  ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |monociclo_fpga|monociclo:DUT|SignExtend:signex|Selector7  ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 15 LEs               ; 5 LEs                  ; No         ; |monociclo_fpga|monociclo:DUT|SignExtend:signex|Selector10 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |monociclo_fpga|monociclo:DUT|SignExtend:signex|Selector0 ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |monociclo_fpga|monociclo:DUT|SignExtend:signex|Selector0 ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 15 LEs               ; 5 LEs                  ; No         ; |monociclo_fpga|monociclo:DUT|SignExtend:signex|Selector6 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------+
@@ -699,24 +1432,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+-------+----------+----------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0"                                                                                                                                                       ;
-+----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                                                                                                                          ;
-+----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; brctrl_i ; Input  ; Info     ; Stuck at GND                                                                                                                                                                     ;
-; ope_i    ; Input  ; Warning  ; Input port expression (5 bits) is wider than the input port (4 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; c_o      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                              ;
-+----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "monociclo:DUT|aluctrl:comb_233"                                                                                                                                                 ;
-+----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port           ; Type   ; Severity ; Details                                                                                                                                                               ;
-+----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; aluoperacion_o ; Output ; Warning  ; Output or bidir port (4 bits) is smaller than the port expression (5 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
-+----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "monociclo:DUT|aluN:execute_u0"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; c_o  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -725,22 +1447,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 58                          ;
-; cycloneiii_ff         ; 33834                       ;
+; cycloneiii_ff         ; 1383                        ;
 ;     CLR               ; 34                          ;
-;     CLR SLD           ; 8                           ;
-;     ENA               ; 33792                       ;
-; cycloneiii_lcell_comb ; 24775                       ;
-;     arith             ; 46                          ;
-;         2 data inputs ; 38                          ;
-;         3 data inputs ; 8                           ;
-;     normal            ; 24729                       ;
+;     CLR SLD           ; 5                           ;
+;     ENA               ; 1344                        ;
+; cycloneiii_lcell_comb ; 1953                        ;
+;     arith             ; 40                          ;
+;         2 data inputs ; 35                          ;
+;         3 data inputs ; 5                           ;
+;     normal            ; 1913                        ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 114                         ;
-;         4 data inputs ; 24602                       ;
+;         2 data inputs ; 34                          ;
+;         3 data inputs ; 422                         ;
+;         4 data inputs ; 1455                        ;
 ;                       ;                             ;
-; Max LUT depth         ; 44.00                       ;
-; Average LUT depth     ; 16.90                       ;
+; Max LUT depth         ; 43.00                       ;
+; Average LUT depth     ; 17.48                       ;
 +-----------------------+-----------------------------+
 
 
@@ -749,7 +1471,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:02:27     ;
+; Top            ; 00:00:10     ;
 +----------------+--------------+
 
 
@@ -759,7 +1481,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Nov 17 16:01:42 2023
+    Info: Processing started: Thu Nov 30 21:08:47 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off monociclo -c monociclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -796,20 +1518,19 @@ Info (12021): Found 1 design units, including 1 entities, in source file aluctrl
     Info (12023): Found entity 1: aluctrl File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl/aluctrl.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file aluctrl_fpga.v
     Info (12023): Found entity 1: aluctrl_fpga File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl_fpga.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at monociclo.v(145): created implicit net for "c_o" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 145
-Critical Warning (10846): Verilog HDL Instantiation warning at monociclo.v(131): instance has no name File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 131
+Warning (10236): Verilog HDL Implicit Net warning at monociclo.v(151): created implicit net for "c_o" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 151
 Info (12127): Elaborating entity "monociclo_fpga" for the top level hierarchy
 Info (12128): Elaborating entity "divisor50mhz" for hierarchy "divisor50mhz:div50_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo_fpga.v Line: 26
 Info (12128): Elaborating entity "monociclo" for hierarchy "monociclo:DUT" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo_fpga.v Line: 35
-Info (12128): Elaborating entity "ichache" for hierarchy "monociclo:DUT|ichache:icache_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 60
-Warning (10850): Verilog HDL warning at icache.v(12): number of words (30) in memory file does not match the number of elements in the address range [0:255] File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/icache/icache.v Line: 12
+Info (12128): Elaborating entity "ichache" for hierarchy "monociclo:DUT|ichache:icache_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 56
+Warning (10850): Verilog HDL warning at icache.v(12): number of words (30) in memory file does not match the number of elements in the address range [0:31] File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/icache/icache.v Line: 12
 Warning (10030): Net "memory.data_a" at icache.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/icache/icache.v Line: 8
 Warning (10030): Net "memory.waddr_a" at icache.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/icache/icache.v Line: 8
 Warning (10030): Net "memory.we_a" at icache.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/icache/icache.v Line: 8
 Info (12128): Elaborating entity "decode" for hierarchy "monociclo:DUT|decode:decode_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 73
 Info (12128): Elaborating entity "registerfile" for hierarchy "monociclo:DUT|registerfile:regfile" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 90
 Info (12128): Elaborating entity "SignExtend" for hierarchy "monociclo:DUT|SignExtend:signex" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 102
-Info (12128): Elaborating entity "aluctrl" for hierarchy "monociclo:DUT|aluctrl:comb_233" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 131
+Info (12128): Elaborating entity "aluctrl" for hierarchy "monociclo:DUT|aluctrl:aluctrl_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 137
 Warning (10272): Verilog HDL Case Statement warning at aluctrl.v(34): case item expression covers a value already covered by a previous case item File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl/aluctrl.v Line: 34
 Warning (10270): Verilog HDL Case Statement warning at aluctrl.v(15): incomplete case statement has no default case item File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl/aluctrl.v Line: 15
 Warning (10270): Verilog HDL Case Statement warning at aluctrl.v(72): incomplete case statement has no default case item File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl/aluctrl.v Line: 72
@@ -818,45 +1539,48 @@ Info (10041): Inferred latch for "aluoperacion_o[0]" at aluctrl.v(12) File: C:/U
 Info (10041): Inferred latch for "aluoperacion_o[1]" at aluctrl.v(12) File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl/aluctrl.v Line: 12
 Info (10041): Inferred latch for "aluoperacion_o[2]" at aluctrl.v(12) File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl/aluctrl.v Line: 12
 Info (10041): Inferred latch for "aluoperacion_o[3]" at aluctrl.v(12) File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl/aluctrl.v Line: 12
-Info (12128): Elaborating entity "aluN" for hierarchy "monociclo:DUT|aluN:execute_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 149
+Info (12128): Elaborating entity "aluN" for hierarchy "monociclo:DUT|aluN:execute_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 155
 Info (12128): Elaborating entity "alu" for hierarchy "monociclo:DUT|aluN:execute_u0|alu:alutag[0].alu_N" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/alu/aluN.v Line: 34
 Info (12128): Elaborating entity "fulladder" for hierarchy "monociclo:DUT|aluN:execute_u0|alu:alutag[0].alu_N|fulladder:fa" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/alu/alu.v Line: 47
 Info (12128): Elaborating entity "flagdetector" for hierarchy "monociclo:DUT|aluN:execute_u0|flagdetector:flagdetector_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/alu/aluN.v Line: 59
 Warning (10270): Verilog HDL Case Statement warning at flagdetector.v(13): incomplete case statement has no default case item File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/alu/flagdetector.v Line: 13
 Warning (10240): Verilog HDL Always Construct warning at flagdetector.v(12): inferring latch(es) for variable "brflag_o", which holds its previous value in one or more paths through the always construct File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/alu/flagdetector.v Line: 12
 Info (10041): Inferred latch for "brflag_o" at flagdetector.v(23) File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/alu/flagdetector.v Line: 23
-Info (12128): Elaborating entity "dchache" for hierarchy "monociclo:DUT|dchache:dcache_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 165
+Info (12128): Elaborating entity "dchache" for hierarchy "monociclo:DUT|dchache:dcache_u0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 171
 Info (12128): Elaborating entity "disp7segs" for hierarchy "disp7segs:disp_0" File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo_fpga.v Line: 44
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "monociclo:DUT|aluctrl_aluoperacion_o[4]" is missing source, defaulting to GND File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 33
 Info (276014): Found 2 instances of uninferred RAM logic
     Info (276007): RAM logic "monociclo:DUT|registerfile:regfile|regfile" is uninferred due to asynchronous read logic File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/regfile/registerfile.v Line: 15
     Info (276007): RAM logic "monociclo:DUT|dchache:dcache_u0|datacache" is uninferred due to asynchronous read logic File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/dcache/dcache.v Line: 15
 Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/db/monociclo.ram0_ichache_f5c6e3f2.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/db/monociclo.ram0_registerfile_e17e90b4.hdl.mif" contains "don't care" values -- overwriting them with 0s
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13012): Latch monociclo:DUT|aluctrl:comb_233|aluoperacion_o[3] has unsafe behavior File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl/aluctrl.v Line: 12
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal monociclo:DUT|pc_w[9] File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 43
-Warning (13012): Latch monociclo:DUT|aluctrl:comb_233|aluoperacion_o[1] has unsafe behavior File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl/aluctrl.v Line: 12
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal monociclo:DUT|pc_w[9] File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 43
-Warning (13012): Latch monociclo:DUT|aluctrl:comb_233|aluoperacion_o[2] has unsafe behavior File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl/aluctrl.v Line: 12
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal monociclo:DUT|pc_w[2] File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 43
-Warning (13012): Latch monociclo:DUT|aluctrl:comb_233|aluoperacion_o[0] has unsafe behavior File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl/aluctrl.v Line: 12
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal monociclo:DUT|pc_w[9] File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 43
+Warning (13012): Latch monociclo:DUT|aluctrl:aluctrl_u0|aluoperacion_o[3] has unsafe behavior File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl/aluctrl.v Line: 12
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal monociclo:DUT|pc_w[6] File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 45
+Warning (13012): Latch monociclo:DUT|aluctrl:aluctrl_u0|aluoperacion_o[1] has unsafe behavior File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl/aluctrl.v Line: 12
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal monociclo:DUT|pc_w[6] File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 45
+Warning (13012): Latch monociclo:DUT|aluctrl:aluctrl_u0|aluoperacion_o[2] has unsafe behavior File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl/aluctrl.v Line: 12
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal monociclo:DUT|pc_w[2] File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 45
+Warning (13012): Latch monociclo:DUT|aluctrl:aluctrl_u0|aluoperacion_o[0] has unsafe behavior File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl/aluctrl.v Line: 12
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal monociclo:DUT|pc_w[6] File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 45
+Warning (13012): Latch monociclo:DUT|aluN:execute_u0|flagdetector:flagdetector_u0|brflag_o has unsafe behavior File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/alu/flagdetector.v Line: 8
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal monociclo:DUT|pc_w[6] File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/monociclo.v Line: 45
 Info (13000): Registers with preset signals will power-up high File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/fpga/divisor50mhz.v Line: 7
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 22 registers lost all their fanouts during netlist optimizations.
+Warning (14026): LATCH primitive "monociclo:DUT|aluctrl:aluctrl_u0|aluoperacion_o[2]" is permanently enabled File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl/aluctrl.v Line: 12
+Warning (14026): LATCH primitive "monociclo:DUT|aluctrl:aluctrl_u0|aluoperacion_o[1]" is permanently enabled File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl/aluctrl.v Line: 12
+Warning (14026): LATCH primitive "monociclo:DUT|aluctrl:aluctrl_u0|aluoperacion_o[0]" is permanently enabled File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl/aluctrl.v Line: 12
+Warning (14026): LATCH primitive "monociclo:DUT|aluctrl:aluctrl_u0|aluoperacion_o[3]" is permanently enabled File: C:/Users/bdvth/OneDrive/Escritorio/Arquitectura/monociclo/aluctrl/aluctrl.v Line: 12
+Info (17049): 25 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 58625 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3355 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 56 output pins
-    Info (21061): Implemented 58567 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 5054 megabytes
-    Info: Processing ended: Fri Nov 17 16:04:38 2023
-    Info: Elapsed time: 00:02:56
-    Info: Total CPU time (on all processors): 00:01:33
+    Info (21061): Implemented 3297 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 28 warnings
+    Info: Peak virtual memory: 4791 megabytes
+    Info: Processing ended: Thu Nov 30 21:09:10 2023
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:27
 
 

@@ -1,13 +1,13 @@
 module alu (
 
-	input				a_i,//valor de entrada en A
-	input				b_i,//valor de entrada en B
-	input				c_i,//acarreo de entrada del sumador
+	input					a_i,//valor de entrada en A
+	input					b_i,//valor de entrada en B
+	input					c_i,//acarreo de entrada del sumador
 	input		[3:0]	sel_i,//selector para la operacion 
-	input				set_i,//colo
-	input				inver_i,
+	input					set_i,//colo
+	input					inver_i,
 	output reg		res_o,//resultado de la operacion
-	output			c_o//acarreo de salida de la suma 
+	output				c_o//acarreo de salida de la suma 
 
 );
 	//cables internos en nuestra alu

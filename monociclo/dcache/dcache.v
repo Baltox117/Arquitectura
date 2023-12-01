@@ -12,7 +12,7 @@ module dchache(
 
 );
 
-	reg		[31:0]	datacache	[2**10-1:0];
+	reg		[31:0]	datacache	[2**5-1:0]; // Modificar el tamaño de la memoria (Tamaño original 10)
 
 	
 	always @(posedge clk_i)

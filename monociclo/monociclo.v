@@ -6,7 +6,7 @@ module monociclo(
 
 );
 	//Asignacion de señal de monitoreo
-	assign				monitor_o = wb_dato_o;
+	assign				monitor_o = rr_dators1_o; //wb_dato_o
 	
 	//Definicion de Señales 
 	reg 		[31:0]	pc_w;
@@ -30,7 +30,9 @@ module monociclo(
 	wire					and_flag_o;
 	wire		[31:0] 	to_dato_o;
 	wire		[4:0]		id_aluop_o;
-	wire		[4:0]		aluctrl_aluoperacion_o;
+	wire		[3:0]		aluctrl_aluoperacion_o;
+	
+	
 	//---------------------------------------------
 	// FETCH STAGE - IF
 	//---------------------------------------------
@@ -38,13 +40,10 @@ module monociclo(
 	always @(posedge clk_i, negedge rst_ni)
 	begin
 		if(!rst_ni)
-			pc_w = 32'b0;
+			pc_w = 32'b0; // iniciamos en la instruccion 0 
 		else
-			pc_w = pcnext_w;
+			pc_w = pcnext_w; // utilizamos la siguiente instruccion indicada 
 	end
-	
-	// CALCULO DE NEXT PC
-	
 	
 	
 	// MEMORIA DE INSTRUCCIONES
@@ -54,10 +53,11 @@ module monociclo(
 		.addrrd_i	(pc_w[9:2]),
 		.inst_o		(if_inst_o)	//etapa_definicion_sentido
 		
-	//
-	// DECODE STAGE - ID
-	//
 	);
+	
+	//---------------------------------------------
+	// DECODE STAGE - ID
+	//---------------------------------------------
 	
 	decode decode_u0(
 
@@ -72,27 +72,27 @@ module monociclo(
 
 	);
 	
-	//
+	//---------------------------------------------
 	// READ REGISTER STAGE - RR
-	//
+	//---------------------------------------------
 	
 	registerfile regfile(
 	
-		.clk_i			(clk_i),
-		.writeen_i		(id_regwrite_o),
-		.addrrd_i		(if_inst_o[11:7]),
-		.addrrs1_i		(if_inst_o[19:15]),
-		.addrrs2_i		(if_inst_o[24:20]),
-		.datord_i		(wb_dato_o),
-		.dators1_o		(rr_dators1_o),
-		.dators2_o		(rr_dators2_o)
+		.clk_i				(clk_i),
+		.writeen_i			(id_regwrite_o),
+		.addrrd_i			(if_inst_o[11:7]),
+		.addrrs1_i			(if_inst_o[19:15]),
+		.addrrs2_i			(if_inst_o[24:20]),
+		.datord_i			(wb_dato_o),
+		.dators1_o			(rr_dators1_o),
+		.dators2_o			(rr_dators2_o)
 
 	);
 	
 	
-	//
+	//---------------------------------------------
 	// EXTENSION DE SIGNO - SE
-	//
+	//---------------------------------------------
 	
 	SignExtend signex(
 
@@ -106,33 +106,39 @@ module monociclo(
 	assign alusrc_dato_o = (id_alusrc_o) ? se_dato_o : rr_dators2_o;
 	
 	
-	//
+	//---------------------------------------------
 	// TARGET OFFSET - TO
-	//
+	//---------------------------------------------
 	
-	assign sl_dato_o = se_dato_o << 1;
-	assign to_dato_o = sl_dato_o + pc_w;
+	// hacemos el salto al siguiente bloque de instrucciones de 4 bytes
+	assign sl_dato_o = se_dato_o << 1; 
 	
-	assign and_flag_o = ex_brflag_o & id_branch_o;
+	// indicamos cual es el siguiente bloque de instruccion que debe ejecutarse
+	assign to_dato_o = sl_dato_o + pc_w; 
 	
-	assign pcnext_w = (and_flag_o) ? to_dato_o : pc_w + 4'h4;
+	// verificamos si la extencion de signo y el salto estan activos 
+	assign and_flag_o = ex_brflag_o & id_branch_o; 
 	
-	//
+	// si la extencion de signo y el salto son 1 utilizamos el salto para el 
+	// siguiente bloque de instrucciones, si no solo ejecutamos la instruccion siguiente
+	assign pcnext_w = (and_flag_o) ? to_dato_o : pc_w + 4'h4; 
+	
+	//---------------------------------------------
 	// ALU CONTROL - ALUCTRL
-	//
+	//---------------------------------------------
 	
-	aluctrl (
+	aluctrl aluctrl_u0(
 
-		.f7_i				(if_inst_o[30]),
-		.f3_i				(if_inst_o[14:12]),
-		.aluop_i			(id_aluop_o),
-		.aluoperacion_o	(aluctrl_aluoperacion_o)
+		.f7_i						(if_inst_o[30]),
+		.f3_i						(if_inst_o[14:12]),
+		.aluop_i					(id_aluop_o),
+		.aluoperacion_o		(aluctrl_aluoperacion_o)
 	
 	);
 	
-	//
+	//---------------------------------------------
 	// EXECUTE STAGE - EX
-	//
+	//---------------------------------------------
 	
 	aluN execute_u0(
 	
@@ -140,7 +146,7 @@ module monociclo(
 		.B_i			(alusrc_dato_o),
 		.c_i			(aluctrl_aluoperacion_o[2]),
 		.branch_i	(id_branch_o),
-		.brctrl_i	(3'b0),
+		.brctrl_i	(if_inst_o[14:12]),// f3 de la instruccion
 		.ope_i		(aluctrl_aluoperacion_o),
 		.c_o			(c_o),
 		.sal_o		(ex_dato_o),
@@ -149,25 +155,25 @@ module monociclo(
 	);
 	
 	
-	//
+	//---------------------------------------------
 	// MEMORY ACCESS STAGE - MEM
-	//
+	//---------------------------------------------
 	
 	dchache dcache_u0(
 	
-		.clk_i		(clk_i),
-		.writeen_i	(id_memwrite_o),
-		.readen_i	(id_memread_o),
-		.addr_i		(ex_dato_o[11:2]),
-		.dato_i		(rr_dators2_o),
-		.dato_o		(mem_dato_o)
+		.clk_i			(clk_i),
+		.writeen_i		(id_memwrite_o),
+		.readen_i		(id_memread_o),
+		.addr_i			(ex_dato_o[11:2]),
+		.dato_i			(rr_dators2_o),
+		.dato_o			(mem_dato_o)
 		
 	);
 	
 	
-	//
+	//---------------------------------------------
 	// WRITE BACK - WB
-	//
+	//---------------------------------------------
 	
 	assign wb_dato_o = (id_memtoreg_o) ? mem_dato_o : ex_dato_o;
 
