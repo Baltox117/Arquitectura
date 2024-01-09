@@ -27,6 +27,7 @@ module fulladder (
 	
 	//operacion xor entre la suma de a_i y b_i con el c_i
 	assign	res_o		  = wirexor1_w ^ c_i;
+	
 endmodule 
 
 // BANCO DE PRUEBAS - TEST BENCH

@@ -6,7 +6,7 @@ module monociclo(
 
 );
 	//Asignacion de señal de monitoreo
-	assign				monitor_o = rr_dators1_o; //wb_dato_o
+	assign				monitor_o = wb_dato_o; //wb_dato_o
 	
 	//Definicion de Señales 
 	reg 		[31:0]	pc_w;
