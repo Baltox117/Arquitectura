@@ -1,4 +1,186 @@
-|fulladder
+|sumadorregistrado
+clk_i => resr_o[0]~reg0.CLK
+clk_i => resr_o[1]~reg0.CLK
+clk_i => resr_o[2]~reg0.CLK
+clk_i => resr_o[3]~reg0.CLK
+clk_i => resr_o[4]~reg0.CLK
+clk_i => resr_o[5]~reg0.CLK
+clk_i => resr_o[6]~reg0.CLK
+clk_i => resr_o[7]~reg0.CLK
+clk_i => cr_o~reg0.CLK
+clk_i => cr_i.CLK
+clk_i => br_i[0].CLK
+clk_i => br_i[1].CLK
+clk_i => br_i[2].CLK
+clk_i => br_i[3].CLK
+clk_i => br_i[4].CLK
+clk_i => br_i[5].CLK
+clk_i => br_i[6].CLK
+clk_i => br_i[7].CLK
+clk_i => ar_i[0].CLK
+clk_i => ar_i[1].CLK
+clk_i => ar_i[2].CLK
+clk_i => ar_i[3].CLK
+clk_i => ar_i[4].CLK
+clk_i => ar_i[5].CLK
+clk_i => ar_i[6].CLK
+clk_i => ar_i[7].CLK
+a_i[0] => ar_i[0].DATAIN
+a_i[1] => ar_i[1].DATAIN
+a_i[2] => ar_i[2].DATAIN
+a_i[3] => ar_i[3].DATAIN
+a_i[4] => ar_i[4].DATAIN
+a_i[5] => ar_i[5].DATAIN
+a_i[6] => ar_i[6].DATAIN
+a_i[7] => ar_i[7].DATAIN
+b_i[0] => br_i[0].DATAIN
+b_i[1] => br_i[1].DATAIN
+b_i[2] => br_i[2].DATAIN
+b_i[3] => br_i[3].DATAIN
+b_i[4] => br_i[4].DATAIN
+b_i[5] => br_i[5].DATAIN
+b_i[6] => br_i[6].DATAIN
+b_i[7] => br_i[7].DATAIN
+c_i => cr_i.DATAIN
+cr_o << cr_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+resr_o[0] << resr_o[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+resr_o[1] << resr_o[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+resr_o[2] << resr_o[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+resr_o[3] << resr_o[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+resr_o[4] << resr_o[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+resr_o[5] << resr_o[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+resr_o[6] << resr_o[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+resr_o[7] << resr_o[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumadorregistrado|fulladder8bits:sumador
+a_i[0] => a_i[0].IN1
+a_i[1] => a_i[1].IN1
+a_i[2] => a_i[2].IN1
+a_i[3] => a_i[3].IN1
+a_i[4] => a_i[4].IN1
+a_i[5] => a_i[5].IN1
+a_i[6] => a_i[6].IN1
+a_i[7] => a_i[7].IN1
+b_i[0] => b_i[0].IN1
+b_i[1] => b_i[1].IN1
+b_i[2] => b_i[2].IN1
+b_i[3] => b_i[3].IN1
+b_i[4] => b_i[4].IN1
+b_i[5] => b_i[5].IN1
+b_i[6] => b_i[6].IN1
+b_i[7] => b_i[7].IN1
+c_i => c_i.IN1
+c_o <= fulladder:adder1bit_7.c_o
+res_o[0] <= fulladder:adder1bit_0.res_o
+res_o[1] <= fulladder:adder1bit_1.res_o
+res_o[2] <= fulladder:adder1bit_2.res_o
+res_o[3] <= fulladder:adder1bit_3.res_o
+res_o[4] <= fulladder:adder1bit_4.res_o
+res_o[5] <= fulladder:adder1bit_5.res_o
+res_o[6] <= fulladder:adder1bit_6.res_o
+res_o[7] <= fulladder:adder1bit_7.res_o
+
+
+|sumadorregistrado|fulladder8bits:sumador|fulladder:adder1bit_0
+a_i => wireand1_w.IN0
+a_i => wireand3_w.IN0
+a_i => wirexor1_w.IN0
+b_i => wireand2_w.IN0
+b_i => wireand3_w.IN1
+b_i => wirexor1_w.IN1
+c_i => wireand1_w.IN1
+c_i => wireand2_w.IN1
+c_i => res_o.IN1
+c_o <= c_o.DB_MAX_OUTPUT_PORT_TYPE
+res_o <= res_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumadorregistrado|fulladder8bits:sumador|fulladder:adder1bit_1
+a_i => wireand1_w.IN0
+a_i => wireand3_w.IN0
+a_i => wirexor1_w.IN0
+b_i => wireand2_w.IN0
+b_i => wireand3_w.IN1
+b_i => wirexor1_w.IN1
+c_i => wireand1_w.IN1
+c_i => wireand2_w.IN1
+c_i => res_o.IN1
+c_o <= c_o.DB_MAX_OUTPUT_PORT_TYPE
+res_o <= res_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumadorregistrado|fulladder8bits:sumador|fulladder:adder1bit_2
+a_i => wireand1_w.IN0
+a_i => wireand3_w.IN0
+a_i => wirexor1_w.IN0
+b_i => wireand2_w.IN0
+b_i => wireand3_w.IN1
+b_i => wirexor1_w.IN1
+c_i => wireand1_w.IN1
+c_i => wireand2_w.IN1
+c_i => res_o.IN1
+c_o <= c_o.DB_MAX_OUTPUT_PORT_TYPE
+res_o <= res_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumadorregistrado|fulladder8bits:sumador|fulladder:adder1bit_3
+a_i => wireand1_w.IN0
+a_i => wireand3_w.IN0
+a_i => wirexor1_w.IN0
+b_i => wireand2_w.IN0
+b_i => wireand3_w.IN1
+b_i => wirexor1_w.IN1
+c_i => wireand1_w.IN1
+c_i => wireand2_w.IN1
+c_i => res_o.IN1
+c_o <= c_o.DB_MAX_OUTPUT_PORT_TYPE
+res_o <= res_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumadorregistrado|fulladder8bits:sumador|fulladder:adder1bit_4
+a_i => wireand1_w.IN0
+a_i => wireand3_w.IN0
+a_i => wirexor1_w.IN0
+b_i => wireand2_w.IN0
+b_i => wireand3_w.IN1
+b_i => wirexor1_w.IN1
+c_i => wireand1_w.IN1
+c_i => wireand2_w.IN1
+c_i => res_o.IN1
+c_o <= c_o.DB_MAX_OUTPUT_PORT_TYPE
+res_o <= res_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumadorregistrado|fulladder8bits:sumador|fulladder:adder1bit_5
+a_i => wireand1_w.IN0
+a_i => wireand3_w.IN0
+a_i => wirexor1_w.IN0
+b_i => wireand2_w.IN0
+b_i => wireand3_w.IN1
+b_i => wirexor1_w.IN1
+c_i => wireand1_w.IN1
+c_i => wireand2_w.IN1
+c_i => res_o.IN1
+c_o <= c_o.DB_MAX_OUTPUT_PORT_TYPE
+res_o <= res_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumadorregistrado|fulladder8bits:sumador|fulladder:adder1bit_6
+a_i => wireand1_w.IN0
+a_i => wireand3_w.IN0
+a_i => wirexor1_w.IN0
+b_i => wireand2_w.IN0
+b_i => wireand3_w.IN1
+b_i => wirexor1_w.IN1
+c_i => wireand1_w.IN1
+c_i => wireand2_w.IN1
+c_i => res_o.IN1
+c_o <= c_o.DB_MAX_OUTPUT_PORT_TYPE
+res_o <= res_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumadorregistrado|fulladder8bits:sumador|fulladder:adder1bit_7
 a_i => wireand1_w.IN0
 a_i => wireand3_w.IN0
 a_i => wirexor1_w.IN0

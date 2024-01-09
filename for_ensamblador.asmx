@@ -1,4 +1,4 @@
-.text
+ .text
 	        addi    t0,x0,15
 	        addi    t1,x0,57
 	        addi    t2,x0,70
